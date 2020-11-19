@@ -1,0 +1,37 @@
+task main()
+{
+ SetSensorLowspeed(IN_3);
+ int heading1;
+ Wait(1500);
+ heading1 = SensorHTCompass(IN_3);
+ while(true){
+  int SE = SensorHTCompass(IN_3);
+  TextOut(0, LCD_LINE3, "Compass:");
+  NumOut(0, LCD_LINE4, SE);
+  int r = SE+30;
+if(SE>0){
+ if(heading1>SE){
+   if(heading1<r){
+     OnFwd(OUT_ABC,0);
+     Wait(100);
+   }
+    else{
+  OnFwd(OUT_ABC,0);
+  OnFwd(OUT_B,75);
+  Wait(100);
+  }
+  }
+   else{
+  OnFwd(OUT_ABC,0);
+  OnFwd(OUT_C,75);
+  Wait(100);
+  }
+ }
+ else{
+  OnFwd(OUT_ABC,0);
+  OnFwd(OUT_C,75);
+  Wait(100);
+   }
+  }
+ }
+}

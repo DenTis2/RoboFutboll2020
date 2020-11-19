@@ -1,0 +1,16 @@
+#define TextNumOut(xPos,yPos,str,col,num)  TextOut(xPos,yPos,str);NumOut(xPos+6*col,yPos,num)
+task main(){
+SetSensorColorFull(IN_4);
+
+ while(true){
+  TextNumOut(0, LCD_LINE3, "Dir:    ",4,SENSOR_4);
+  if(SENSOR_4 == 3){
+   OnFwd(OUT_BC,100);
+   Wait(100);
+  }
+  else{
+   OnFwd(OUT_BC,-100);
+   Wait(100);
+  }
+ }
+}

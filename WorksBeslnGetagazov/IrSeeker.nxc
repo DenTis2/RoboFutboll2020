@@ -1,0 +1,255 @@
+#define IRSEEKER IN_2
+#define TextNumOut(xPos,yPos,str,col,num)  TextOut(xPos,yPos,str);NumOut(xPos+6*col,yPos,num)
+task main()
+{
+ int dir, s1, s2, s3, s4, s5, result;
+ while(true) {
+
+   SetSensorLowspeed(IRSEEKER);
+   ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+   TextNumOut(0, LCD_LINE3, "Dir:    ",4,dir);
+   TextNumOut(6, LCD_LINE4, "S1:     ",3,s1);
+   TextNumOut(6, LCD_LINE5, "S2:     ",3,s2);
+   TextNumOut(6, LCD_LINE6, "S3:     ",3,s3);
+   TextNumOut(6, LCD_LINE7, "S4:     ",3,s4);
+   TextNumOut(6, LCD_LINE8, "S5:     ",3,s5);
+   if(dir==5){
+   OnFwd(OUT_ABC,0);
+   OnFwd(OUT_BC,-100);
+   OnFwd(OUT_A,100);
+   }
+   if(dir<5){
+   OnFwd(OUT_ABC,0);
+   OnFwd(OUT_B,-100);
+   OnFwd(OUT_C,100);
+   }
+   if(dir>5){
+   OnFwd(OUT_ABC,0);
+   OnFwd(OUT_C,-100);
+   OnFwd(OUT_B,100);
+   }
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
