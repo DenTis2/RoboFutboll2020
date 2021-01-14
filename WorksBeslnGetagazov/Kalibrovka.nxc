@@ -1,6 +1,8 @@
 #define IRSEEKER IN_2
 #define TextNumOut(xPos,yPos,str,col,num)  TextOut(xPos,yPos,str);NumOut(xPos+6*col,yPos,num)
 
+int flagPause = 1;
+
 int azimut;
 int azimutRight;
 int azimutLeft;
@@ -57,12 +59,42 @@ SetSensorLowspeed(IRSEEKER);
 Wait(1000);
 kalibrovka();
 /*
-  1. Поворот на мяч
-  2. Если мяч близко, атаковать 4-5 секунд.
-  3. Воврат в ворота.
+  1. ГЏГ®ГўГ®Г°Г®ГІ Г­Г  Г¬ГїГ·
+  2. Г…Г±Г«ГЁ Г¬ГїГ· ГЎГ«ГЁГ§ГЄГ®, Г ГІГ ГЄГ®ГўГ ГІГј 4-5 Г±ГҐГЄГіГ­Г¤.
+  3. Г‚Г®ГўГ°Г ГІ Гў ГўГ®Г°Г®ГІГ .
 */
 while(true)
 {
+
+
+
+ 
+
+
+while(true)
+{
+
+ // Robot on Pause
+ if (flagPause) {
+	while(ButtonPressed(BTNCENTER, false) == 0) { Wait(50); }
+	 flagPause = 0;
+       PlayTone(1780, 500);
+	 while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+ }
+
+ // Robot off Pause
+ if (ButtonPressed(BTNCENTER, false) == 1 && flagPause == 0){
+	while(ButtonPressed(BTNCENTER, false) == 0) { Wait(50); }
+	 flagPause = 1;
+       PlayTone(1780, 500);
+	 while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+ }
+	
+
+
+ ScanBall();
+ PlayTone(1780, 500);
+}
  ScanBall();
  PlayTone(1780, 500);
 }
