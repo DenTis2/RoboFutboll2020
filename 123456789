@@ -1,0 +1,70 @@
+  
+#define IRSEEKER IN_2
+#define TextNumOut(xPos,yPos,str,col,num)  TextOut(xPos,yPos,str);NumOut(xPos+6*col,yPos,num)
+
+int azimut;
+int azimutRight;
+int azimutLeft;
+int dir, s1, s2, s3, s4, s5;
+void ScanBall() {
+      ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+     int rast = s1 + s2 + s3 + s4 + s5;
+     while(rast < 100) {
+                ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+                rast = s1 + s2 + s3 + s4 + s5;
+                if(dir - 5 < 0) {
+                       OnFwd(OUT_C, 50);
+                       OnFwd(OUT_B, -50);
+                }
+                if(dir - 5 > 0) {
+                       OnFwd(OUT_C, -50);
+                       OnFwd(OUT_B, 50);
+                }
+                if(dir - 5 == 0) {
+                       OnFwd(OUT_C, 0);
+                       OnFwd(OUT_B, 0);
+                }
+                TextNumOut(0, LCD_LINE3, "rast:    ",4,rast);
+     }
+}
+void kalibrovka() {
+     while(ButtonPressed(BTNCENTER, false) == 0) {
+     azimut = SensorHTCompass(IN_3);
+     }
+      PlayTone(1780, 500);
+      while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+      
+          while(ButtonPressed(BTNCENTER, false) == 0) {
+     azimutRight = SensorHTCompass(IN_3);
+     }
+            PlayTone(1780, 500);
+      while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+          while(ButtonPressed(BTNCENTER, false) == 0) {
+     azimutLeft = SensorHTCompass(IN_3);
+     }
+      PlayTone(1780, 500);
+      while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+}
+
+task main()
+{
+
+#ifdef __ENHANCED_FIRMWARE
+SetLongAbort(true);
+#endif
+SetSensorLowspeed(IN_3);
+SetSensorLowspeed(IRSEEKER);
+
+Wait(1000);
+kalibrovka();
+/*
+  1. Ïîâîðîò íà ìÿ÷
+  2. Åñëè ìÿ÷ áëèçêî, àòàêîâàòü 4-5 ñåêóíä.
+  3. Âîâðàò â âîðîòà.
+*/
+while(true)
+{
+ ScanBall();
+ PlayTone(1780, 500);
+}
+}
