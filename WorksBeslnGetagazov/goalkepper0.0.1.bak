@@ -1,6 +1,6 @@
 #define IRSEEKER IN_2
 #define TextNumOut(xPos,yPos,str,col,num)  TextOut(xPos,yPos,str);NumOut(xPos+6*col,yPos,num)
-
+int flagPause=1;
 int azimut;
 int azimutRight;
 int azimutLeft;
@@ -8,12 +8,12 @@ int dir, s1, s2, s3, s4, s5;
 void ScanBall() {
       ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
      int rast = s1 + s2 + s3 + s4 + s5;
-     while(rast < 100) {
+     if(rast < 100) {
                 ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
                 rast = s1 + s2 + s3 + s4 + s5;
                 if(dir - 5 < 0) {
                        OnFwd(OUT_C, 50);
-                       OnFwd(OUT_B, -50);
+                OnFwd(OUT_B, -50);
                 }
                 if(dir - 5 > 0) {
                        OnFwd(OUT_C, -50);
@@ -24,6 +24,8 @@ void ScanBall() {
                        OnFwd(OUT_B, 0);
                 }
                 TextNumOut(0, LCD_LINE3, "rast:    ",4,rast);
+     } else {
+        PlayTone(1780, 500);
      }
 }
 void kalibrovka() {
@@ -32,7 +34,7 @@ void kalibrovka() {
      }
       PlayTone(1780, 500);
       while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
-      
+
           while(ButtonPressed(BTNCENTER, false) == 0) {
      azimutRight = SensorHTCompass(IN_3);
      }
@@ -63,7 +65,30 @@ kalibrovka();
 */
 while(true)
 {
+
+ // Robot on Pause
+ if (flagPause) {
+	while(ButtonPressed(BTNCENTER, false) == 0) { Wait(50); }
+	 flagPause = 0;
+       PlayTone(1780, 500);
+	 while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+ }
+
+ // Robot off Pause
+ if (ButtonPressed(BTNCENTER, false) == 1 &&   flagPause == 0){
+	while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+	 flagPause = 1;
+       PlayTone(1780, 500);
+	 while(ButtonPressed(BTNCENTER, false) == 0) { Wait(50); }
+ }
+
+
+
+ ScanBall();
+
+}
+}
  ScanBall();
  PlayTone(1780, 500);
 }
-}
+

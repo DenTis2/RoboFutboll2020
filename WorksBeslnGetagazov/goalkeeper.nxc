@@ -1,10 +1,14 @@
 task main()
 {
+while(true)
+{
      OnFwd(OUT_ABC, 100);
      Wait(900);
-     OutOff(ABC);
+     OnFwd(0);
      OnFwd(OUT_ABC, 100);
      Wait(900);
-     OutOff(ABC);
+     Out(ABC);
+     OnFwd(0);
      Wait(1000);
+}
 }

@@ -108,15 +108,15 @@ kalibrovka();
 while(true)
 {
  ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
- rast = s1 + s2 + s3 + s4 + s5;
+ int rast = s1 + s2 + s3 + s4 + s5;
      
   if(rast<80){
    ScanBall();
    }
    else {
-    //PlayTone(1780, 500);
-    gotoball();
-   }
+ //PlayTone(1780, 500);
+ gotoball();
+ }
 }
 
 }

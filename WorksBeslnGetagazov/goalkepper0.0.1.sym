@@ -1,0 +1,1204 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0ScanBall	6	1	0	4	32
+1	__D0main	6	1	4	4	50
+2	__D0SetSensorLowspeed_inline_main	6	1	8	4	6
+3	__signed_stack_001kalibrovka	6	1	12	4	30
+4	__DU0SetSensorLowspeed_inline_main	5	1	16	4	4
+5	__RLSBmutex2	9	0	20	4	6
+6	__RLSBmutex1	9	0	24	4	4
+7	__RBtnMutex	9	0	28	4	22
+8	__D0kalibrovka	6	1	32	4	69
+9	__SPTArgsMutex	9	0	36	4	12
+10	__signed_stack_002ScanBall	6	1	40	4	6
+11	__signed_stack_001ScanBall	6	1	44	4	26
+12	__signed_stack_003ScanBall	6	1	48	4	2
+13	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	52	4	10
+14	__Wait_7qG2_ms_7qG2_000_inline_kalibrovka	5	1	56	4	6
+15	__signed_stack_003kalibrovka	6	1	60	4	6
+16	__signed_stack_002kalibrovka	6	1	64	4	6
+17	__signed_stack_001main	6	1	68	4	26
+18	__signed_stack_003main	6	1	72	4	4
+19	__signed_stack_002main	6	1	76	4	6
+20	__CLSRMutex2	9	0	80	4	2
+21	__CLSRMutex1	9	0	84	4	2
+22	__CLSWMutex1	9	0	88	4	2
+23	__CLSCSMutex2	9	0	92	4	2
+24	__CLSWMutex2	9	0	96	4	2
+25	__CLSCSMutex1	9	0	100	4	2
+26	__ScanBall_7qG2_rast_7qG2_000	4	1	104	2	4
+27	s1	4	1	106	2	4
+28	dir	4	1	108	2	5
+29	s2	4	1	110	2	4
+30	s4	4	1	112	2	4
+31	s5	4	1	114	2	4
+32	s3	4	1	116	2	4
+33	flagPause	4	0	118	2	4
+34	__constVal3	2	0	120	1	8
+35	__constVal5	2	0	121	1	5
+36	__constVal4	2	0	122	1	2
+37	__constVal0	2	1	123	1	20
+38	__ResetSensorPort	1	1	124	1	4
+39	____ResetSensorSubroutine_return	1	1	125	1	4
+40	__ResetSensorTmp	1	1	126	1	2
+41	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	127	1	4
+42	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	128	1	4
+43	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	129	1	10
+44	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	130	1	4
+45	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	131	1	2
+46	__constVal32	2	0	132	1	18
+47	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	133	1	4
+48	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	134	1	4
+49	__constVal96	2	0	135	1	6
+50	__constVal63	2	0	136	1	6
+51	__ScanBall_return	1	1	137	1	3
+52	__constVal73	2	0	138	1	2
+53	__constVal1	2	0	139	1	13
+54	____initialize_global_data_return	1	1	140	1	3
+55	__constValNeg50	2	0	141	1	2
+56	__kalibrovka_return	1	1	142	1	3
+57	__PFTmp	1	1	143	1	1
+58	__constVal15	2	0	144	1	2
+59	____ReadLSBytes1_return	1	1	145	1	4
+60	__constVal16	2	0	146	1	2
+61	__RLSBytesCount2	1	1	147	1	15
+62	__RLSBIterations2	1	1	148	1	4
+63	__RLSBResult2	2	1	149	1	7
+64	__constVal2	2	0	150	1	5
+65	____ReadLSBytes2_return	1	1	151	1	5
+66	__RLSBytesCount1	1	1	152	1	8
+67	__RLSBIterations1	1	1	153	1	4
+68	__RLSBResult1	2	1	154	1	9
+69	__zfSetSensorLowspeed_inline_main	1	1	155	1	4
+70	__zfmain	1	1	156	1	23
+71	__zfkalibrovka	1	1	157	1	18
+72	__zfScanBall	1	1	158	1	12
+73	__CLSRArgs2	8	0	4	12	5
+74	__CLSRArgs2.Result	2	1	160	1	5
+75	__CLSRArgs2.Port	1	1	161	1	5
+76	__CLSRArgs2.Buffer	7	0	162	4	5
+77	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+78	__CLSRArgs2.BufferLen	1	1	164	1	5
+79	__TextOutArgs	8	0	4	16	11
+80	__TextOutArgs.Result	2	1	168	1	11
+81	__TextOutArgs.Location	8	0	2	4	11
+82	__TextOutArgs.Location.X	4	1	172	2	11
+83	__TextOutArgs.Location.Y	4	1	174	2	11
+84	__TextOutArgs.Text	7	0	176	4	11
+85	__TextOutArgs.Text.Text_type	1	0	0	1	0
+86	__TextOutArgs.Options	5	1	180	4	11
+87	__CLSRArgs1	8	0	4	12	5
+88	__CLSRArgs1.Result	2	1	184	1	5
+89	__CLSRArgs1.Port	1	1	185	1	5
+90	__CLSRArgs1.Buffer	7	0	186	4	5
+91	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+92	__CLSRArgs1.BufferLen	1	1	188	1	5
+93	__CLSCSArgs1	8	0	3	4	4
+94	__CLSCSArgs1.Result	2	1	192	1	4
+95	__CLSCSArgs1.Port	1	1	193	1	4
+96	__CLSCSArgs1.BytesReady	1	1	194	1	4
+97	__CLSWArgs1	8	0	4	12	5
+98	__CLSWArgs1.Result	2	1	196	1	5
+99	__CLSWArgs1.Port	1	1	197	1	5
+100	__CLSWArgs1.Buffer	7	0	198	4	5
+101	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+102	__CLSWArgs1.ReturnLen	1	1	200	1	5
+103	__CLSCSArgs2	8	0	3	4	4
+104	__CLSCSArgs2.Result	2	1	204	1	4
+105	__CLSCSArgs2.Port	1	1	205	1	4
+106	__CLSCSArgs2.BytesReady	1	1	206	1	4
+107	__CLSWArgs2	8	0	4	12	5
+108	__CLSWArgs2.Result	2	1	208	1	5
+109	__CLSWArgs2.Port	1	1	209	1	5
+110	__CLSWArgs2.Buffer	7	0	210	4	5
+111	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+112	__CLSWArgs2.ReturnLen	1	1	212	1	5
+113	__RBtnArgs	8	0	5	8	44
+114	__RBtnArgs.Result	2	1	216	1	44
+115	__RBtnArgs.Index	1	1	217	1	44
+116	__RBtnArgs.Pressed	1	1	218	1	44
+117	__RBtnArgs.Count	1	1	219	1	44
+118	__RBtnArgs.Reset	1	1	220	1	44
+119	__SPTArgs	8	0	5	8	36
+120	__SPTArgs.Result	2	1	224	1	36
+121	__SPTArgs.Frequency	3	1	226	2	36
+122	__SPTArgs.Duration	3	1	228	2	36
+123	__SPTArgs.Loop	1	1	230	1	36
+124	__SPTArgs.Volume	1	1	231	1	36
+125	__RLSBbufLSWrite1	7	0	232	4	3
+126	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+127	__RLSLastGoodRead1	7	0	234	4	2
+128	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+129	__RLSReadBuf2	7	0	236	4	15
+130	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+131	__strbufScanBall	7	0	238	4	2
+132	__strbufScanBall.__strbufScanBall_type	1	0	0	1	0
+133	__RLSLastGoodRead2	7	0	240	4	2
+134	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+135	__RLSReadBuf1	7	0	242	4	20
+136	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+137	__constStr0009	7	0	244	4	1
+138	__constStr0009.__constStr0009_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	55	0	#line 55 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	56	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	55	2	#line 55 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	55	2	#line 55 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	56	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 2
+0	55	5	#line 55 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	56	5	#line 56 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	57	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	7	#line 3758 "NXCDefs.h"
+0	3759	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3759	9		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	11	#line 3758 "NXCDefs.h"
+0	3759	11		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	14	#line 3758 "NXCDefs.h"
+0	3759	14		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	17	#line 3758 "NXCDefs.h"
+0	3759	17		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	20	#line 3758 "NXCDefs.h"
+0	3759	20		jmp __004__NXC_Label_37
+0	3758	22	#line 3758 "NXCDefs.h"
+0	3759	22		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	25	#line 3758 "NXCDefs.h"
+0	3759	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3760	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3760	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	36	#line 3759 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3761	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3760	42	#line 3760 "NXCDefs.h"
+0	3694	42	#line 3694 "NXCDefs.h"
+0	3695	42	#pragma macro 4
+0	3695	42		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4543	46	#line 4543 "NXCDefs.h"
+0	3694	46	#line 3694 "NXCDefs.h"
+0	3761	46	#line 3761 "NXCDefs.h"
+0	56	46	#line 56 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	56	46	#line 56 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	57	46		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 1
+0	56	49	#line 56 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	58	49	#line 58 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	59	49		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	51	#line 3758 "NXCDefs.h"
+0	3759	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	53	#line 3758 "NXCDefs.h"
+0	3758	53	#line 3758 "NXCDefs.h"
+0	3759	53		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	55	#line 3758 "NXCDefs.h"
+0	3759	55		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	58	#line 3758 "NXCDefs.h"
+0	3759	58		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	61	#line 3758 "NXCDefs.h"
+0	3759	61		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	64	#line 3758 "NXCDefs.h"
+0	3759	64		jmp __005__NXC_Label_37
+0	3758	66	#line 3758 "NXCDefs.h"
+0	3759	66		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	69	#line 3758 "NXCDefs.h"
+0	3759	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	71	#line 3663 "NXCDefs.h"
+0	3664	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	75	#line 3663 "NXCDefs.h"
+0	3759	75	#line 3759 "NXCDefs.h"
+0	3759	75	#line 3759 "NXCDefs.h"
+0	3760	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	77	#line 3759 "NXCDefs.h"
+0	3759	77	#line 3759 "NXCDefs.h"
+0	3760	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	80	#line 3759 "NXCDefs.h"
+0	3676	80	#line 3676 "NXCDefs.h"
+0	3677	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	84	#line 3676 "NXCDefs.h"
+0	3760	84	#line 3760 "NXCDefs.h"
+0	3760	84	#line 3760 "NXCDefs.h"
+0	3761	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3760	86	#line 3760 "NXCDefs.h"
+0	3694	86	#line 3694 "NXCDefs.h"
+0	3695	86	#pragma macro 4
+0	3695	86		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4610	90	#line 4610 "NXCDefs.h"
+0	3694	90	#line 3694 "NXCDefs.h"
+0	3761	90	#line 3761 "NXCDefs.h"
+0	58	90	#line 58 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	58	90	#line 58 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	59	90		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	58	93	#line 58 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	7921	93	#line 7921 "NXCDefs.h"
+0	7922	93		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	96	#line 7921 "NXCDefs.h"
+0	59	96	#line 59 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	65	96	#line 65 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	66	96		subcall kalibrovka, __kalibrovka_return
+0	65	98	#line 65 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	66	98	#line 66 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	67	98		set __D0main, 1
+0	69	101	#line 69 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	70	101		tst 5, __zfmain, __D0main
+0	69	104	#line 69 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	70	104		brtst 4, __NXC_Label_627, __zfmain
+0	69	107	#line 69 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	70	107		mov __D0main, flagPause
+0	70	109	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	109		tst 5, __zfmain, __D0main
+0	70	112	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	112		brtst 4, __NXC_Label_632, __zfmain
+0	70	115	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	115		set __signed_stack_001main, 3
+0	70	118	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	70	118	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	118		set __D0main, 0
+0	70	121	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	121		acquire __RBtnMutex
+0	70	122	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	122		mov __RBtnArgs.Index, __signed_stack_001main
+0	70	124	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	124		mov __RBtnArgs.Reset, __D0main
+0	70	126	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	126		syscall 20, __RBtnArgs
+0	70	129	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	129		mov __D0main, __RBtnArgs.Pressed
+0	70	131	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	131		release __RBtnMutex
+0	70	132	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	132		mov __signed_stack_001main, __D0main
+0	70	134	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	134		set __D0main, 0
+0	70	137	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	137		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	70	141	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	141		mov __D0main, __zfmain
+0	70	143	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	143		brtst 4, __NXC_Label_634, __zfmain
+0	70	146	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	146		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	70	149	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	7921	149	#line 7921 "NXCDefs.h"
+0	7922	149		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	152	#line 7921 "NXCDefs.h"
+0	70	152	#line 70 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	71	152	#line 71 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	72	152		jmp __NXC_Label_633
+0	71	154	#line 71 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	72	154	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	73	154		set flagPause, 0
+0	72	157	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	72	157	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	72	157	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	73	157		set __signed_stack_001main, 1780
+0	72	160	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	72	160	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	73	160		set __signed_stack_002main, 500
+0	72	163	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	72	163	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	73	163		set __signed_stack_003main, 4
+0	72	166	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	72	166	#line 72 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	73	166		set __D0main, 0
+0	73	169	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	169		acquire __SPTArgsMutex
+0	73	170	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	170		mov __SPTArgs.Frequency, __signed_stack_001main
+0	73	172	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	172		mov __SPTArgs.Duration, __signed_stack_002main
+0	73	174	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	174		mov __SPTArgs.Volume, __signed_stack_003main
+0	73	176	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	176		mov __SPTArgs.Loop, __D0main
+0	73	178	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	178		syscall 10, __SPTArgs
+0	73	181	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	181		mov __D0main, __SPTArgs.Result
+0	73	183	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	183		release __SPTArgsMutex
+0	73	184	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	73	184	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	184		set __signed_stack_001main, 3
+0	73	187	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	73	187	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	187		set __D0main, 0
+0	73	190	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	190		acquire __RBtnMutex
+0	73	191	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	191		mov __RBtnArgs.Index, __signed_stack_001main
+0	73	193	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	193		mov __RBtnArgs.Reset, __D0main
+0	73	195	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	195		syscall 20, __RBtnArgs
+0	73	198	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	198		mov __D0main, __RBtnArgs.Pressed
+0	73	200	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	200		release __RBtnMutex
+0	73	201	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	201		mov __signed_stack_001main, __D0main
+0	73	203	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	203		set __D0main, 1
+0	73	206	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	206		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	73	210	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	210		mov __D0main, __zfmain
+0	73	212	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	212		brtst 4, __NXC_Label_654, __zfmain
+0	73	215	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	74	215		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	73	218	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	7921	218	#line 7921 "NXCDefs.h"
+0	7922	218		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	221	#line 7921 "NXCDefs.h"
+0	73	221	#line 73 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	77	221	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	221		jmp __NXC_Label_653
+0	77	223	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	77	223	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	77	223	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	223		set __signed_stack_001main, 3
+0	77	226	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	77	226	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	226		set __D0main, 0
+0	77	229	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	229		acquire __RBtnMutex
+0	77	230	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	230		mov __RBtnArgs.Index, __signed_stack_001main
+0	77	232	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	232		mov __RBtnArgs.Reset, __D0main
+0	77	234	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	234		syscall 20, __RBtnArgs
+0	77	237	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	237		mov __D0main, __RBtnArgs.Pressed
+0	77	239	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	239		release __RBtnMutex
+0	77	240	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	240		mov __signed_stack_001main, __D0main
+0	77	242	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	242		set __D0main, 1
+0	77	245	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	245		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	77	249	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	249		mov __D0main, __zfmain
+0	77	251	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	251		brtst 4, __NXC_Label_664, __zfmain
+0	77	254	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	254		mov __signed_stack_001main, __D0main
+0	77	256	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	256		mov __signed_stack_002main, flagPause
+0	77	258	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	77	258	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	258		set __D0main, 0
+0	77	261	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	261		cmp 4, __zfmain, __signed_stack_002main, __D0main
+0	77	265	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	77	265	#line 77 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	265		and __D0main, __signed_stack_001main, __zfmain
+0	78	269	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	269		tst 5, __zfmain, __D0main
+0	78	272	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	272		brtst 4, __NXC_Label_669, __zfmain
+0	78	275	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	275		set __signed_stack_001main, 3
+0	78	278	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	78	278	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	278		set __D0main, 0
+0	78	281	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	281		acquire __RBtnMutex
+0	78	282	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	282		mov __RBtnArgs.Index, __signed_stack_001main
+0	78	284	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	284		mov __RBtnArgs.Reset, __D0main
+0	78	286	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	286		syscall 20, __RBtnArgs
+0	78	289	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	289		mov __D0main, __RBtnArgs.Pressed
+0	78	291	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	291		release __RBtnMutex
+0	78	292	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	292		mov __signed_stack_001main, __D0main
+0	78	294	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	294		set __D0main, 1
+0	78	297	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	297		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	78	301	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	301		mov __D0main, __zfmain
+0	78	303	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	303		brtst 4, __NXC_Label_671, __zfmain
+0	78	306	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	306		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	78	309	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	7921	309	#line 7921 "NXCDefs.h"
+0	7922	309		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	312	#line 7921 "NXCDefs.h"
+0	78	312	#line 78 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	79	312	#line 79 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	80	312		jmp __NXC_Label_670
+0	79	314	#line 79 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	80	314	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	81	314		set flagPause, 1
+0	80	317	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	80	317	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	80	317	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	81	317		set __signed_stack_001main, 1780
+0	80	320	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	80	320	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	81	320		set __signed_stack_002main, 500
+0	80	323	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	80	323	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	81	323		set __signed_stack_003main, 4
+0	80	326	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	80	326	#line 80 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	81	326		set __D0main, 0
+0	81	329	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	329		acquire __SPTArgsMutex
+0	81	330	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	330		mov __SPTArgs.Frequency, __signed_stack_001main
+0	81	332	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	332		mov __SPTArgs.Duration, __signed_stack_002main
+0	81	334	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	334		mov __SPTArgs.Volume, __signed_stack_003main
+0	81	336	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	336		mov __SPTArgs.Loop, __D0main
+0	81	338	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	338		syscall 10, __SPTArgs
+0	81	341	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	341		mov __D0main, __SPTArgs.Result
+0	81	343	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	343		release __SPTArgsMutex
+0	81	344	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	81	344	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	344		set __signed_stack_001main, 3
+0	81	347	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	81	347	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	347		set __D0main, 0
+0	81	350	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	350		acquire __RBtnMutex
+0	81	351	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	351		mov __RBtnArgs.Index, __signed_stack_001main
+0	81	353	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	353		mov __RBtnArgs.Reset, __D0main
+0	81	355	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	355		syscall 20, __RBtnArgs
+0	81	358	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	358		mov __D0main, __RBtnArgs.Pressed
+0	81	360	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	360		release __RBtnMutex
+0	81	361	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	361		mov __signed_stack_001main, __D0main
+0	81	363	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	363		set __D0main, 0
+0	81	366	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	366		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	81	370	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	370		mov __D0main, __zfmain
+0	81	372	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	372		brtst 4, __NXC_Label_691, __zfmain
+0	81	375	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	82	375		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	81	378	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	7921	378	#line 7921 "NXCDefs.h"
+0	7922	378		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	381	#line 7921 "NXCDefs.h"
+0	81	381	#line 81 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	86	381	#line 86 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	87	381		jmp __NXC_Label_690
+0	86	383	#line 86 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	86	383	#line 86 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	88	383	#line 88 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	89	383		subcall ScanBall, __ScanBall_return
+0	88	385	#line 88 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	92	385	#line 92 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	93	385		jmp __NXC_Label_626
+0	92	387	#line 92 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+0	93	387		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5710	0	#pragma macro 25
+2	5710	0		acquire __CLSWMutex1
+2	5710	1		set __CLSWArgs1.Port, 1
+2	5710	4		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+2	5710	6		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+2	5710	8		syscall 21, __CLSWArgs1
+2	5710	11		mov __RLSBResult1, __CLSWArgs1.Result
+2	5710	13		release __CLSWMutex1
+2	5710	14	#line 5710 "NXTDefs.h"
+2	5711	14		brtst 4, __RLSBReturn1, __RLSBytesCount1
+2	5712	17		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+2	5713	21		brtst 5, __RLSBError1, __RLSBResult1
+2	5714	24		set __RLSBIterations1, 4
+2	5716	27	#pragma macro 23
+2	5716	27		acquire __CLSCSMutex1
+2	5716	28		set __CLSCSArgs1.Port, 1
+2	5716	31		syscall 23, __CLSCSArgs1
+2	5716	34		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+2	5716	36		mov __RLSBResult1, __CLSCSArgs1.Result
+2	5716	38		release __CLSCSMutex1
+2	5716	39	#line 5716 "NXTDefs.h"
+2	5717	39		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+2	5718	43		brtst 2, __RLSBError1, __RLSBIterations1
+2	5719	46		brtst 0, __RLSBError1, __RLSBResult1
+2	5720	49		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+2	5722	52		wait2 NA, __constVal15
+2	5723	55		jmp __RLSBDoCheckStatus1
+2	5726	57	#pragma macro 25
+2	5726	57		acquire __CLSRMutex1
+2	5726	58		set __CLSRArgs1.Port, 1
+2	5726	61		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+2	5726	63		syscall 22, __CLSRArgs1
+2	5726	66		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+2	5726	68		mov __RLSBResult1, __CLSRArgs1.Result
+2	5726	70		release __CLSRMutex1
+2	5726	71	#line 5726 "NXTDefs.h"
+2	5727	71		brtst 5, __RLSBError1, __RLSBResult1
+2	5728	74		mov __RLSLastGoodRead1, __RLSReadBuf1
+2	5729	76		jmp __RLSBDone1
+2	5731	78		mov __RLSReadBuf1, __RLSLastGoodRead1
+2	5733	80		arrsize __RLSBytesCount1, __RLSReadBuf1
+2	5735	83		subret ____ReadLSBytes1_return
+3	5747	0	#pragma macro 25
+3	5747	0		acquire __CLSWMutex2
+3	5747	1		set __CLSWArgs2.Port, 2
+3	5747	4		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+3	5747	6		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+3	5747	8		syscall 21, __CLSWArgs2
+3	5747	11		mov __RLSBResult2, __CLSWArgs2.Result
+3	5747	13		release __CLSWMutex2
+3	5747	14	#line 5747 "NXTDefs.h"
+3	5748	14		brtst 4, __RLSBReturn2, __RLSBytesCount2
+3	5749	17		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+3	5750	21		brtst 5, __RLSBError2, __RLSBResult2
+3	5751	24		set __RLSBIterations2, 4
+3	5753	27	#pragma macro 23
+3	5753	27		acquire __CLSCSMutex2
+3	5753	28		set __CLSCSArgs2.Port, 2
+3	5753	31		syscall 23, __CLSCSArgs2
+3	5753	34		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+3	5753	36		mov __RLSBResult2, __CLSCSArgs2.Result
+3	5753	38		release __CLSCSMutex2
+3	5753	39	#line 5753 "NXTDefs.h"
+3	5754	39		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+3	5755	43		brtst 2, __RLSBError2, __RLSBIterations2
+3	5756	46		brtst 0, __RLSBError2, __RLSBResult2
+3	5757	49		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+3	5759	52		wait2 NA, __constVal15
+3	5760	55		jmp __RLSBDoCheckStatus2
+3	5763	57	#pragma macro 25
+3	5763	57		acquire __CLSRMutex2
+3	5763	58		set __CLSRArgs2.Port, 2
+3	5763	61		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+3	5763	63		syscall 22, __CLSRArgs2
+3	5763	66		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+3	5763	68		mov __RLSBResult2, __CLSRArgs2.Result
+3	5763	70		release __CLSRMutex2
+3	5763	71	#line 5763 "NXTDefs.h"
+3	5764	71		brtst 5, __RLSBError2, __RLSBResult2
+3	5765	74		mov __RLSLastGoodRead2, __RLSReadBuf2
+3	5766	76		jmp __RLSBDone2
+3	5768	78		mov __RLSReadBuf2, __RLSLastGoodRead2
+3	5770	80		arrsize __RLSBytesCount2, __RLSReadBuf2
+3	5772	83		subret ____ReadLSBytes2_return
+4	8	0	#line 8 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	9	0	#pragma macro 36
+4	9	0		acquire __RLSBmutex1
+4	9	1		arrbuild __RLSReadBuf1, __constVal16, __constVal73
+4	9	6		set __RLSBytesCount1, 6
+4	9	9		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+4	9	11		tst 4, __D0ScanBall, __RLSBResult1
+4	9	14		index dir, __RLSReadBuf1, 65535
+4	9	18		index s1, __RLSReadBuf1, __constVal1
+4	9	22		index s2, __RLSReadBuf1, __constVal2
+4	9	26		index s3, __RLSReadBuf1, __constVal3
+4	9	30		index s4, __RLSReadBuf1, __constVal4
+4	9	34		index s5, __RLSReadBuf1, __constVal5
+4	9	38		release __RLSBmutex1
+4	3727	39	#line 3727 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	8	39	#line 8 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	8	39	#line 8 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	9	39	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	9	39	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	9	39	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	9	39	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	10	39		add __signed_stack_001ScanBall, s1, s2
+4	9	43	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	9	43	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	9	43	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	10	43		add __signed_stack_001ScanBall, __signed_stack_001ScanBall, s3
+4	9	47	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	9	47	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	9	47	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	10	47		add __signed_stack_001ScanBall, __signed_stack_001ScanBall, s4
+4	9	51	#line 9 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	10	51	#line 10 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	10	51	#line 10 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	11	51		add __ScanBall_7qG2_rast_7qG2_000, __signed_stack_001ScanBall, s5
+4	10	55	#line 10 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	10	55	#line 10 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	11	55		mov __signed_stack_001ScanBall, __ScanBall_7qG2_rast_7qG2_000
+4	10	57	#line 10 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	10	57	#line 10 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	11	57		set __D0ScanBall, 100
+4	10	60	#line 10 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	11	60		cmp 0, __zfScanBall, __signed_stack_001ScanBall, __D0ScanBall
+4	10	64	#line 10 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	11	64		mov __D0ScanBall, __zfScanBall
+4	11	66	#line 11 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	66		brtst 4, __NXC_Label_493, __zfScanBall
+4	11	69	#line 11 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	69	#pragma macro 36
+4	12	69		acquire __RLSBmutex1
+4	12	70		arrbuild __RLSReadBuf1, __constVal16, __constVal73
+4	12	75		set __RLSBytesCount1, 6
+4	12	78		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+4	12	80		tst 4, __D0ScanBall, __RLSBResult1
+4	12	83		index dir, __RLSReadBuf1, 65535
+4	12	87		index s1, __RLSReadBuf1, __constVal1
+4	12	91		index s2, __RLSReadBuf1, __constVal2
+4	12	95		index s3, __RLSReadBuf1, __constVal3
+4	12	99		index s4, __RLSReadBuf1, __constVal4
+4	12	103		index s5, __RLSReadBuf1, __constVal5
+4	12	107		release __RLSBmutex1
+4	3779	108	#line 3779 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	11	108	#line 11 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	11	108	#line 11 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	108	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	108	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	108	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	108	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	108		add __signed_stack_001ScanBall, s1, s2
+4	12	112	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	112	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	112	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	112		add __signed_stack_001ScanBall, __signed_stack_001ScanBall, s3
+4	12	116	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	116	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	12	116	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	116		add __signed_stack_001ScanBall, __signed_stack_001ScanBall, s4
+4	12	120	#line 12 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	120	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	120	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	14	120		add __ScanBall_7qG2_rast_7qG2_000, __signed_stack_001ScanBall, s5
+4	13	124	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	124	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	124	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	124	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	124	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	124	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	14	124		sub __signed_stack_001ScanBall, dir, __constVal5
+4	13	128	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	13	128	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	14	128		set __D0ScanBall, 0
+4	13	131	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	14	131		cmp 0, __zfScanBall, __signed_stack_001ScanBall, __D0ScanBall
+4	13	135	#line 13 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	14	135		mov __D0ScanBall, __zfScanBall
+4	14	137	#line 14 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	15	137		brtst 4, __NXC_Label_498, __zfScanBall
+4	14	140	#line 14 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	15	140		set __D0ScanBall, 50
+4	15	143	#line 15 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	16	143	#pragma macro 7
+4	16	143		setout __constVal2, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3838	166	#line 3838 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	15	166	#line 15 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	15	166	#line 15 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	16	166		mov __D0ScanBall, __constValNeg50
+4	16	168	#line 16 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	17	168	#pragma macro 7
+4	17	168		setout __constVal1, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3845	191	#line 3845 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	16	191	#line 16 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	17	191	#line 17 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	17	191	#line 17 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	17	191	#line 17 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	17	191	#line 17 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	17	191	#line 17 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	18	191		sub __signed_stack_001ScanBall, dir, __constVal5
+4	17	195	#line 17 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	17	195	#line 17 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	18	195		set __D0ScanBall, 0
+4	17	198	#line 17 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	18	198		cmp 1, __zfScanBall, __signed_stack_001ScanBall, __D0ScanBall
+4	17	202	#line 17 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	18	202		mov __D0ScanBall, __zfScanBall
+4	18	204	#line 18 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	19	204		brtst 4, __NXC_Label_505, __zfScanBall
+4	18	207	#line 18 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	19	207		mov __D0ScanBall, __constValNeg50
+4	19	209	#line 19 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	20	209	#pragma macro 7
+4	20	209		setout __constVal2, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3874	232	#line 3874 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	19	232	#line 19 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	19	232	#line 19 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	20	232		set __D0ScanBall, 50
+4	20	235	#line 20 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	21	235	#pragma macro 7
+4	21	235		setout __constVal1, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3881	258	#line 3881 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	20	258	#line 20 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	21	258	#line 21 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	21	258	#line 21 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	21	258	#line 21 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	21	258	#line 21 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	21	258	#line 21 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	22	258		sub __signed_stack_001ScanBall, dir, __constVal5
+4	21	262	#line 21 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	21	262	#line 21 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	22	262		set __D0ScanBall, 0
+4	21	265	#line 21 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	22	265		cmp 4, __zfScanBall, __signed_stack_001ScanBall, __D0ScanBall
+4	21	269	#line 21 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	22	269		mov __D0ScanBall, __zfScanBall
+4	22	271	#line 22 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	23	271		brtst 4, __NXC_Label_512, __zfScanBall
+4	22	274	#line 22 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	23	274		set __D0ScanBall, 0
+4	23	277	#line 23 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	24	277	#pragma macro 7
+4	24	277		setout __constVal2, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3910	300	#line 3910 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	23	300	#line 23 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	23	300	#line 23 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	24	300		set __D0ScanBall, 0
+4	24	303	#line 24 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	303	#pragma macro 7
+4	25	303		setout __constVal1, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3917	326	#line 3917 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	24	326	#line 24 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	326	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	326	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	326		set __signed_stack_001ScanBall, 0
+4	25	329	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	329	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	329		set __signed_stack_002ScanBall, 40
+4	25	332	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	332	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	332		strcat __strbufScanBall, __constStr0009
+4	25	336	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	336	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	336		mov __TextOutArgs.Location.X, __signed_stack_001ScanBall
+4	25	338	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	338		mov __TextOutArgs.Location.Y, __signed_stack_002ScanBall
+4	25	340	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	340		set __TextOutArgs.Options, 0
+4	25	343	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	343		mov __TextOutArgs.Text, __strbufScanBall
+4	25	345	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	345		syscall 13, __TextOutArgs
+4	25	348	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	348	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	348	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	348	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	348		set __signed_stack_001ScanBall, 24
+4	25	351	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	351	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	351		set __signed_stack_002ScanBall, 40
+4	25	354	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	25	354	#line 25 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	354		mov __D0ScanBall, __ScanBall_7qG2_rast_7qG2_000
+4	26	356	#line 26 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	356	#line 26 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	356		mov __TextOutArgs.Location.X, __signed_stack_001ScanBall
+4	26	358	#line 26 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	358		mov __TextOutArgs.Location.Y, __signed_stack_002ScanBall
+4	26	360	#line 26 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	360		set __TextOutArgs.Options, 0
+4	26	363	#line 26 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	363		numtostr __TextOutArgs.Text, __D0ScanBall
+4	26	366	#line 26 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	366		syscall 13, __TextOutArgs
+4	26	369	#line 26 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	369		mov __D0ScanBall, __TextOutArgs.Result
+4	26	371	#line 26 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	26	371	#line 26 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	371	#line 27 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	28	371		jmp __NXC_Label_527
+4	27	373	#line 27 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	28	373		set __signed_stack_001ScanBall, 1780
+4	27	376	#line 27 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	376	#line 27 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	28	376		set __signed_stack_002ScanBall, 500
+4	27	379	#line 27 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	379	#line 27 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	28	379		set __signed_stack_003ScanBall, 4
+4	27	382	#line 27 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	27	382	#line 27 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	28	382		set __D0ScanBall, 0
+4	28	385	#line 28 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	29	385		acquire __SPTArgsMutex
+4	28	386	#line 28 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	29	386		mov __SPTArgs.Frequency, __signed_stack_001ScanBall
+4	28	388	#line 28 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	29	388		mov __SPTArgs.Duration, __signed_stack_002ScanBall
+4	28	390	#line 28 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	29	390		mov __SPTArgs.Volume, __signed_stack_003ScanBall
+4	28	392	#line 28 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	29	392		mov __SPTArgs.Loop, __D0ScanBall
+4	28	394	#line 28 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	29	394		syscall 10, __SPTArgs
+4	28	397	#line 28 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	29	397		mov __D0ScanBall, __SPTArgs.Result
+4	28	399	#line 28 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	29	399		release __SPTArgsMutex
+4	28	400	#line 28 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	30	400	#line 30 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	30	400	#line 30 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+4	31	400		subret __ScanBall_return
+5	31	0	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	0		set __signed_stack_001kalibrovka, 3
+5	31	3	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	31	3	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	3		set __D0kalibrovka, 0
+5	31	6	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	6		acquire __RBtnMutex
+5	31	7	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	7		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	31	9	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	9		mov __RBtnArgs.Reset, __D0kalibrovka
+5	31	11	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	11		syscall 20, __RBtnArgs
+5	31	14	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	14		mov __D0kalibrovka, __RBtnArgs.Pressed
+5	31	16	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	16		release __RBtnMutex
+5	31	17	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	17		mov __signed_stack_001kalibrovka, __D0kalibrovka
+5	31	19	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	19		set __D0kalibrovka, 0
+5	31	22	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	22		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	31	26	#line 31 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	26		mov __D0kalibrovka, __zfkalibrovka
+5	32	28	#line 32 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	33	28		brtst 4, __NXC_Label_537, __zfkalibrovka
+5	32	31	#line 32 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	33	31	#pragma macro 30
+5	33	31		acquire __RLSBmutex2
+5	33	32		mov __RLSReadBuf2, __RLSBbufLSWrite1
+5	33	34		set __RLSBytesCount2, 2
+5	33	37		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+5	33	39		index __D0kalibrovka, __RLSReadBuf2, 65535
+5	33	43		index __RLSBytesCount2, __RLSReadBuf2, __constVal1
+5	33	47		add __D0kalibrovka, __D0kalibrovka, __D0kalibrovka
+5	33	51		add __D0kalibrovka, __D0kalibrovka, __RLSBytesCount2
+5	33	55		release __RLSBmutex2
+5	4070	56	#line 4070 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	56	#line 32 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	56	#line 32 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	32	56	#line 32 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	34	56	#line 34 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	35	56		jmp __NXC_Label_536
+5	34	58	#line 34 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	34	58	#line 34 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	35	58		set __signed_stack_001kalibrovka, 1780
+5	34	61	#line 34 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	34	61	#line 34 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	35	61		set __signed_stack_002kalibrovka, 500
+5	34	64	#line 34 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	34	64	#line 34 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	35	64		set __signed_stack_003kalibrovka, 4
+5	34	67	#line 34 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	34	67	#line 34 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	35	67		set __D0kalibrovka, 0
+5	35	70	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	70		acquire __SPTArgsMutex
+5	35	71	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	71		mov __SPTArgs.Frequency, __signed_stack_001kalibrovka
+5	35	73	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	73		mov __SPTArgs.Duration, __signed_stack_002kalibrovka
+5	35	75	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	75		mov __SPTArgs.Volume, __signed_stack_003kalibrovka
+5	35	77	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	77		mov __SPTArgs.Loop, __D0kalibrovka
+5	35	79	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	79		syscall 10, __SPTArgs
+5	35	82	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	82		mov __D0kalibrovka, __SPTArgs.Result
+5	35	84	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	84		release __SPTArgsMutex
+5	35	85	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	35	85	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	85		set __signed_stack_001kalibrovka, 3
+5	35	88	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	35	88	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	88		set __D0kalibrovka, 0
+5	35	91	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	91		acquire __RBtnMutex
+5	35	92	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	92		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	35	94	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	94		mov __RBtnArgs.Reset, __D0kalibrovka
+5	35	96	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	96		syscall 20, __RBtnArgs
+5	35	99	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	99		mov __D0kalibrovka, __RBtnArgs.Pressed
+5	35	101	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	101		release __RBtnMutex
+5	35	102	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	102		mov __signed_stack_001kalibrovka, __D0kalibrovka
+5	35	104	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	104		set __D0kalibrovka, 1
+5	35	107	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	107		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	35	111	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	111		mov __D0kalibrovka, __zfkalibrovka
+5	35	113	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	113		brtst 4, __NXC_Label_555, __zfkalibrovka
+5	35	116	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	36	116		set __Wait_7qG2_ms_7qG2_000_inline_kalibrovka, 50
+5	35	119	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	7921	119	#line 7921 "NXCDefs.h"
+5	7922	119		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_kalibrovka
+5	7921	122	#line 7921 "NXCDefs.h"
+5	35	122	#line 35 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	37	122	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	122		jmp __NXC_Label_554
+5	37	124	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	37	124	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	124		set __signed_stack_001kalibrovka, 3
+5	37	127	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	37	127	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	127		set __D0kalibrovka, 0
+5	37	130	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	130		acquire __RBtnMutex
+5	37	131	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	131		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	37	133	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	133		mov __RBtnArgs.Reset, __D0kalibrovka
+5	37	135	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	135		syscall 20, __RBtnArgs
+5	37	138	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	138		mov __D0kalibrovka, __RBtnArgs.Pressed
+5	37	140	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	140		release __RBtnMutex
+5	37	141	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	141		mov __signed_stack_001kalibrovka, __D0kalibrovka
+5	37	143	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	143		set __D0kalibrovka, 0
+5	37	146	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	146		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	37	150	#line 37 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	150		mov __D0kalibrovka, __zfkalibrovka
+5	38	152	#line 38 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	39	152		brtst 4, __NXC_Label_565, __zfkalibrovka
+5	38	155	#line 38 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	39	155	#pragma macro 30
+5	39	155		acquire __RLSBmutex2
+5	39	156		mov __RLSReadBuf2, __RLSBbufLSWrite1
+5	39	158		set __RLSBytesCount2, 2
+5	39	161		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+5	39	163		index __D0kalibrovka, __RLSReadBuf2, 65535
+5	39	167		index __RLSBytesCount2, __RLSReadBuf2, __constVal1
+5	39	171		add __D0kalibrovka, __D0kalibrovka, __D0kalibrovka
+5	39	175		add __D0kalibrovka, __D0kalibrovka, __RLSBytesCount2
+5	39	179		release __RLSBmutex2
+5	4209	180	#line 4209 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	180	#line 38 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	180	#line 38 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	38	180	#line 38 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	40	180	#line 40 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	41	180		jmp __NXC_Label_564
+5	40	182	#line 40 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	40	182	#line 40 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	41	182		set __signed_stack_001kalibrovka, 1780
+5	40	185	#line 40 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	40	185	#line 40 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	41	185		set __signed_stack_002kalibrovka, 500
+5	40	188	#line 40 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	40	188	#line 40 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	41	188		set __signed_stack_003kalibrovka, 4
+5	40	191	#line 40 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	40	191	#line 40 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	41	191		set __D0kalibrovka, 0
+5	41	194	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	194		acquire __SPTArgsMutex
+5	41	195	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	195		mov __SPTArgs.Frequency, __signed_stack_001kalibrovka
+5	41	197	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	197		mov __SPTArgs.Duration, __signed_stack_002kalibrovka
+5	41	199	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	199		mov __SPTArgs.Volume, __signed_stack_003kalibrovka
+5	41	201	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	201		mov __SPTArgs.Loop, __D0kalibrovka
+5	41	203	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	203		syscall 10, __SPTArgs
+5	41	206	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	206		mov __D0kalibrovka, __SPTArgs.Result
+5	41	208	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	208		release __SPTArgsMutex
+5	41	209	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	41	209	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	209		set __signed_stack_001kalibrovka, 3
+5	41	212	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	41	212	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	212		set __D0kalibrovka, 0
+5	41	215	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	215		acquire __RBtnMutex
+5	41	216	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	216		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	41	218	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	218		mov __RBtnArgs.Reset, __D0kalibrovka
+5	41	220	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	220		syscall 20, __RBtnArgs
+5	41	223	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	223		mov __D0kalibrovka, __RBtnArgs.Pressed
+5	41	225	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	225		release __RBtnMutex
+5	41	226	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	226		mov __signed_stack_001kalibrovka, __D0kalibrovka
+5	41	228	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	228		set __D0kalibrovka, 1
+5	41	231	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	231		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	41	235	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	235		mov __D0kalibrovka, __zfkalibrovka
+5	41	237	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	237		brtst 4, __NXC_Label_583, __zfkalibrovka
+5	41	240	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	240		set __Wait_7qG2_ms_7qG2_000_inline_kalibrovka, 50
+5	41	243	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	7921	243	#line 7921 "NXCDefs.h"
+5	7922	243		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_kalibrovka
+5	7921	246	#line 7921 "NXCDefs.h"
+5	41	246	#line 41 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	246	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	246		jmp __NXC_Label_582
+5	42	248	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	248	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	248		set __signed_stack_001kalibrovka, 3
+5	42	251	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	42	251	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	251		set __D0kalibrovka, 0
+5	42	254	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	254		acquire __RBtnMutex
+5	42	255	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	255		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	42	257	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	257		mov __RBtnArgs.Reset, __D0kalibrovka
+5	42	259	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	259		syscall 20, __RBtnArgs
+5	42	262	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	262		mov __D0kalibrovka, __RBtnArgs.Pressed
+5	42	264	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	264		release __RBtnMutex
+5	42	265	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	265		mov __signed_stack_001kalibrovka, __D0kalibrovka
+5	42	267	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	267		set __D0kalibrovka, 0
+5	42	270	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	270		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	42	274	#line 42 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	274		mov __D0kalibrovka, __zfkalibrovka
+5	43	276	#line 43 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	44	276		brtst 4, __NXC_Label_593, __zfkalibrovka
+5	43	279	#line 43 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	44	279	#pragma macro 30
+5	44	279		acquire __RLSBmutex2
+5	44	280		mov __RLSReadBuf2, __RLSBbufLSWrite1
+5	44	282		set __RLSBytesCount2, 2
+5	44	285		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+5	44	287		index __D0kalibrovka, __RLSReadBuf2, 65535
+5	44	291		index __RLSBytesCount2, __RLSReadBuf2, __constVal1
+5	44	295		add __D0kalibrovka, __D0kalibrovka, __D0kalibrovka
+5	44	299		add __D0kalibrovka, __D0kalibrovka, __RLSBytesCount2
+5	44	303		release __RLSBmutex2
+5	4344	304	#line 4344 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	304	#line 43 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	304	#line 43 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	43	304	#line 43 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	45	304	#line 45 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	46	304		jmp __NXC_Label_592
+5	45	306	#line 45 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	45	306	#line 45 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	46	306		set __signed_stack_001kalibrovka, 1780
+5	45	309	#line 45 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	45	309	#line 45 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	46	309		set __signed_stack_002kalibrovka, 500
+5	45	312	#line 45 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	45	312	#line 45 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	46	312		set __signed_stack_003kalibrovka, 4
+5	45	315	#line 45 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	45	315	#line 45 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	46	315		set __D0kalibrovka, 0
+5	46	318	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	318		acquire __SPTArgsMutex
+5	46	319	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	319		mov __SPTArgs.Frequency, __signed_stack_001kalibrovka
+5	46	321	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	321		mov __SPTArgs.Duration, __signed_stack_002kalibrovka
+5	46	323	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	323		mov __SPTArgs.Volume, __signed_stack_003kalibrovka
+5	46	325	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	325		mov __SPTArgs.Loop, __D0kalibrovka
+5	46	327	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	327		syscall 10, __SPTArgs
+5	46	330	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	330		mov __D0kalibrovka, __SPTArgs.Result
+5	46	332	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	332		release __SPTArgsMutex
+5	46	333	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	46	333	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	333		set __signed_stack_001kalibrovka, 3
+5	46	336	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	46	336	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	336		set __D0kalibrovka, 0
+5	46	339	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	339		acquire __RBtnMutex
+5	46	340	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	340		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	46	342	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	342		mov __RBtnArgs.Reset, __D0kalibrovka
+5	46	344	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	344		syscall 20, __RBtnArgs
+5	46	347	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	347		mov __D0kalibrovka, __RBtnArgs.Pressed
+5	46	349	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	349		release __RBtnMutex
+5	46	350	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	350		mov __signed_stack_001kalibrovka, __D0kalibrovka
+5	46	352	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	352		set __D0kalibrovka, 1
+5	46	355	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	355		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	46	359	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	359		mov __D0kalibrovka, __zfkalibrovka
+5	46	361	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	361		brtst 4, __NXC_Label_611, __zfkalibrovka
+5	46	364	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	47	364		set __Wait_7qG2_ms_7qG2_000_inline_kalibrovka, 50
+5	46	367	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	7921	367	#line 7921 "NXCDefs.h"
+5	7922	367		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_kalibrovka
+5	7921	370	#line 7921 "NXCDefs.h"
+5	46	370	#line 46 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	49	370	#line 49 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	50	370		jmp __NXC_Label_610
+5	49	372	#line 49 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	49	372	#line 49 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+5	50	372		subret __kalibrovka_return
+6	93	0	#line 93 "C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc"
+6	94	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc
+1	__ResetSensorSubroutine	390	NXTDefs.h
+2	__ReadLSBytes1	403	NXTDefs.h
+3	__ReadLSBytes2	488	NXTDefs.h
+4	ScanBall	573	C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc
+5	kalibrovka	975	C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc
+6	__initialize_global_data	1349	C:\WorksBeslnGetagazov\goalkepper0.0.1.nxc

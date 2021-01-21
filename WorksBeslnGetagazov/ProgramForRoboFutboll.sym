@@ -1,0 +1,1351 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0main	6	1	0	4	6
+1	__D0kalibrovka	6	1	4	4	57
+2	__D0ScanBall	6	1	8	4	22
+3	__DU0SetSensorLowspeed_inline_gotoball	5	1	12	4	2
+4	__D0SetSensorLowspeed_inline_gotoball	6	1	16	4	3
+5	__RLSBmutex1	9	0	20	4	6
+6	__CLSRMutex2	9	0	24	4	2
+7	__RLSBmutex2	9	0	28	4	6
+8	__D0gotoball	6	1	32	4	45
+9	__SPTArgsMutex	9	0	36	4	6
+10	__D0SetSensorLowspeed_inline_main	6	1	40	4	6
+11	__signed_stack_001main	6	1	44	4	8
+12	__signed_stack_003kalibrovka	6	1	48	4	6
+13	__signed_stack_001ScanBall	6	1	52	4	11
+14	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	56	4	2
+15	__Wait_7qG2_ms_7qG2_000_inline_kalibrovka	5	1	60	4	6
+16	__signed_stack_001gotoball	6	1	64	4	38
+17	__DU0SetSensorLowspeed_inline_main	5	1	68	4	4
+18	__signed_stack_002gotoball	6	1	72	4	24
+19	__signed_stack_002kalibrovka	6	1	76	4	6
+20	__signed_stack_001kalibrovka	6	1	80	4	30
+21	__CLSRMutex1	9	0	84	4	2
+22	__CLSCSMutex2	9	0	88	4	2
+23	__CLSWMutex1	9	0	92	4	2
+24	__ResetSensorMutex	9	0	96	4	6
+25	__CLSCSMutex1	9	0	100	4	2
+26	__CLSWMutex2	9	0	104	4	2
+27	s2	4	1	108	2	7
+28	s1	4	1	110	2	7
+29	s3	4	1	112	2	7
+30	rast	4	1	114	2	4
+31	s5	4	1	116	2	6
+32	s4	4	1	118	2	7
+33	dir	4	1	120	2	10
+34	__constVal73	2	0	122	1	3
+35	__ScanBall_return	1	1	123	1	3
+36	__constVal96	2	0	124	1	16
+37	__constValNeg50	2	0	125	1	2
+38	__constVal63	2	0	126	1	16
+39	__constVal0	2	1	127	1	52
+40	__constVal1	2	0	128	1	17
+41	__constVal3	2	0	129	1	19
+42	__constVal5	2	0	130	1	6
+43	__constVal4	2	0	131	1	3
+44	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	132	1	8
+45	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	133	1	4
+46	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_gotoball	1	1	134	1	2
+47	____initialize_global_data_return	1	1	135	1	3
+48	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	136	1	4
+49	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	137	1	4
+50	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	138	1	4
+51	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	139	1	4
+52	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	140	1	4
+53	__gotoball_return	1	1	141	1	3
+54	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_gotoball	1	1	142	1	4
+55	__kalibrovka_return	1	1	143	1	3
+56	__constVal32	2	0	144	1	48
+57	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_gotoball	1	1	145	1	2
+58	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_gotoball	1	1	146	1	2
+59	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_gotoball	1	1	147	1	2
+60	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_gotoball	1	1	148	1	2
+61	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_gotoball	1	1	149	1	2
+62	__ResetSensorPort	1	1	150	1	5
+63	__constVal2	2	0	151	1	8
+64	__RLSBIterations2	1	1	152	1	4
+65	__RLSBytesCount2	1	1	153	1	15
+66	__constVal16	2	0	154	1	3
+67	__PFTmp	1	1	155	1	1
+68	__constValNeg100	2	0	156	1	4
+69	__RLSBResult2	2	1	157	1	7
+70	__RLSBytesCount1	1	1	158	1	9
+71	__RLSBResult1	2	1	159	1	10
+72	____ReadLSBytes1_return	1	1	160	1	5
+73	__constVal15	2	0	161	1	2
+74	____ReadLSBytes2_return	1	1	162	1	5
+75	__RLSBIterations1	1	1	163	1	4
+76	__zfgotoball	1	1	164	1	12
+77	__zfSetSensorLowspeed_inline_main	1	1	165	1	4
+78	__zfScanBall	1	1	166	1	9
+79	__zfmain	1	1	167	1	5
+80	__zfSetSensorLowspeed_inline_gotoball	1	1	168	1	2
+81	____ResetSensorSubroutine_return	1	1	169	1	5
+82	__ResetSensorTmp	1	1	170	1	2
+83	__zfkalibrovka	1	1	171	1	18
+84	__CLSCSArgs1	8	0	3	4	4
+85	__CLSCSArgs1.Result	2	1	172	1	4
+86	__CLSCSArgs1.Port	1	1	173	1	4
+87	__CLSCSArgs1.BytesReady	1	1	174	1	4
+88	__CLSRArgs2	8	0	4	12	5
+89	__CLSRArgs2.Result	2	1	176	1	5
+90	__CLSRArgs2.Port	1	1	177	1	5
+91	__CLSRArgs2.Buffer	7	0	178	4	5
+92	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+93	__CLSRArgs2.BufferLen	1	1	180	1	5
+94	__CLSCSArgs2	8	0	3	4	4
+95	__CLSCSArgs2.Result	2	1	184	1	4
+96	__CLSCSArgs2.Port	1	1	185	1	4
+97	__CLSCSArgs2.BytesReady	1	1	186	1	4
+98	__SPTArgs	8	0	5	8	18
+99	__SPTArgs.Result	2	1	188	1	18
+100	__SPTArgs.Frequency	3	1	190	2	18
+101	__SPTArgs.Duration	3	1	192	2	18
+102	__SPTArgs.Loop	1	1	194	1	18
+103	__SPTArgs.Volume	1	1	195	1	18
+104	__CLSRArgs1	8	0	4	12	5
+105	__CLSRArgs1.Result	2	1	196	1	5
+106	__CLSRArgs1.Port	1	1	197	1	5
+107	__CLSRArgs1.Buffer	7	0	198	4	5
+108	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+109	__CLSRArgs1.BufferLen	1	1	200	1	5
+110	__TextOutArgs	8	0	4	16	60
+111	__TextOutArgs.Result	2	1	204	1	60
+112	__TextOutArgs.Location	8	0	2	4	60
+113	__TextOutArgs.Location.X	4	1	208	2	60
+114	__TextOutArgs.Location.Y	4	1	210	2	60
+115	__TextOutArgs.Text	7	0	212	4	60
+116	__TextOutArgs.Text.Text_type	1	0	0	1	0
+117	__TextOutArgs.Options	5	1	216	4	60
+118	__RBtnArgs	8	0	5	8	24
+119	__RBtnArgs.Result	2	1	220	1	24
+120	__RBtnArgs.Index	1	1	221	1	24
+121	__RBtnArgs.Pressed	1	1	222	1	24
+122	__RBtnArgs.Count	1	1	223	1	24
+123	__RBtnArgs.Reset	1	1	224	1	24
+124	__CLSWArgs2	8	0	4	12	5
+125	__CLSWArgs2.Result	2	1	228	1	5
+126	__CLSWArgs2.Port	1	1	229	1	5
+127	__CLSWArgs2.Buffer	7	0	230	4	5
+128	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+129	__CLSWArgs2.ReturnLen	1	1	232	1	5
+130	__CLSWArgs1	8	0	4	12	5
+131	__CLSWArgs1.Result	2	1	236	1	5
+132	__CLSWArgs1.Port	1	1	237	1	5
+133	__CLSWArgs1.Buffer	7	0	238	4	5
+134	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+135	__CLSWArgs1.ReturnLen	1	1	240	1	5
+136	__OUT_BC	7	0	242	4	4
+137	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+138	__RLSReadBuf1	7	0	244	4	27
+139	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+140	__RLSLastGoodRead1	7	0	246	4	2
+141	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+142	__constStr0014	7	0	248	4	1
+143	__constStr0014.__constStr0014_type	1	1	0	1	0
+144	__RLSReadBuf2	7	0	250	4	15
+145	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+146	__RLSLastGoodRead2	7	0	252	4	2
+147	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+148	__RLSBbufLSWrite1	7	0	254	4	3
+149	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+150	__strbufgotoball	7	0	256	4	12
+151	__strbufgotoball.__strbufgotoball_type	1	0	0	1	0
+152	__constStr0009	7	0	258	4	1
+153	__constStr0009.__constStr0009_type	1	1	0	1	0
+154	__constStr0012	7	0	260	4	1
+155	__constStr0012.__constStr0012_type	1	1	0	1	0
+156	__constStr0013	7	0	262	4	1
+157	__constStr0013.__constStr0013_type	1	1	0	1	0
+158	__constStr0010	7	0	264	4	1
+159	__constStr0010.__constStr0010_type	1	1	0	1	0
+160	__constStr0011	7	0	266	4	1
+161	__constStr0011.__constStr0011_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	97	0	#line 97 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	98	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	97	2	#line 97 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	97	2	#line 97 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	98	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 2
+0	97	5	#line 97 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	98	5	#line 98 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	99	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	7	#line 3758 "NXCDefs.h"
+0	3759	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3759	9		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	11	#line 3758 "NXCDefs.h"
+0	3759	11		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	14	#line 3758 "NXCDefs.h"
+0	3759	14		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	17	#line 3758 "NXCDefs.h"
+0	3759	17		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	20	#line 3758 "NXCDefs.h"
+0	3759	20		jmp __005__NXC_Label_37
+0	3758	22	#line 3758 "NXCDefs.h"
+0	3759	22		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	25	#line 3758 "NXCDefs.h"
+0	3759	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3760	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3760	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	36	#line 3759 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3761	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3760	42	#line 3760 "NXCDefs.h"
+0	3694	42	#line 3694 "NXCDefs.h"
+0	3695	42	#pragma macro 4
+0	3695	42		acquire __ResetSensorMutex
+0	3695	43		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main
+0	3695	45		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3695	47		release __ResetSensorMutex
+0	5307	48	#line 5307 "NXCDefs.h"
+0	3694	48	#line 3694 "NXCDefs.h"
+0	3761	48	#line 3761 "NXCDefs.h"
+0	98	48	#line 98 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	98	48	#line 98 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	99	48		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 1
+0	98	51	#line 98 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	100	51	#line 100 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	101	51		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	53	#line 3758 "NXCDefs.h"
+0	3759	53		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	55	#line 3758 "NXCDefs.h"
+0	3758	55	#line 3758 "NXCDefs.h"
+0	3759	55		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	57	#line 3758 "NXCDefs.h"
+0	3759	57		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	60	#line 3758 "NXCDefs.h"
+0	3759	60		brtst 4, __006__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	63	#line 3758 "NXCDefs.h"
+0	3759	63		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	66	#line 3758 "NXCDefs.h"
+0	3759	66		jmp __006__NXC_Label_37
+0	3758	68	#line 3758 "NXCDefs.h"
+0	3759	68		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	71	#line 3758 "NXCDefs.h"
+0	3759	71		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	73	#line 3663 "NXCDefs.h"
+0	3664	73		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	77	#line 3663 "NXCDefs.h"
+0	3759	77	#line 3759 "NXCDefs.h"
+0	3759	77	#line 3759 "NXCDefs.h"
+0	3760	77		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	79	#line 3759 "NXCDefs.h"
+0	3759	79	#line 3759 "NXCDefs.h"
+0	3760	79		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	82	#line 3759 "NXCDefs.h"
+0	3676	82	#line 3676 "NXCDefs.h"
+0	3677	82		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	86	#line 3676 "NXCDefs.h"
+0	3760	86	#line 3760 "NXCDefs.h"
+0	3760	86	#line 3760 "NXCDefs.h"
+0	3761	86		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3760	88	#line 3760 "NXCDefs.h"
+0	3694	88	#line 3694 "NXCDefs.h"
+0	3695	88	#pragma macro 4
+0	3695	88		acquire __ResetSensorMutex
+0	3695	89		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main
+0	3695	91		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3695	93		release __ResetSensorMutex
+0	5374	94	#line 5374 "NXCDefs.h"
+0	3694	94	#line 3694 "NXCDefs.h"
+0	3761	94	#line 3761 "NXCDefs.h"
+0	100	94	#line 100 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	100	94	#line 100 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	101	94		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	100	97	#line 100 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	7921	97	#line 7921 "NXCDefs.h"
+0	7922	97		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	100	#line 7921 "NXCDefs.h"
+0	101	100	#line 101 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	107	100	#line 107 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	108	100		subcall kalibrovka, __kalibrovka_return
+0	107	102	#line 107 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	108	102	#line 108 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	109	102		set __D0main, 1
+0	109	105	#line 109 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	105		tst 5, __zfmain, __D0main
+0	109	108	#line 109 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	108		brtst 4, __NXC_Label_716, __zfmain
+0	109	111	#line 109 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	111	#pragma macro 36
+0	110	111		acquire __RLSBmutex1
+0	110	112		arrbuild __RLSReadBuf1, __constVal16, __constVal73
+0	110	117		set __RLSBytesCount1, 6
+0	110	120		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+0	110	122		tst 4, __D0main, __RLSBResult1
+0	110	125		index dir, __RLSReadBuf1, 65535
+0	110	129		index s1, __RLSReadBuf1, __constVal1
+0	110	133		index s2, __RLSReadBuf1, __constVal2
+0	110	137		index s3, __RLSReadBuf1, __constVal3
+0	110	141		index s4, __RLSReadBuf1, __constVal4
+0	110	145		index s5, __RLSReadBuf1, __constVal5
+0	110	149		release __RLSBmutex1
+0	5405	150	#line 5405 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	109	150	#line 109 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	109	150	#line 109 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	150	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	150	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	150	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	150	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	111	150		add __signed_stack_001main, s1, s2
+0	110	154	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	154	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	154	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	111	154		add __signed_stack_001main, __signed_stack_001main, s3
+0	110	158	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	158	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	110	158	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	111	158		add __signed_stack_001main, __signed_stack_001main, s4
+0	110	162	#line 110 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	112	162	#line 112 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	112	162	#line 112 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	113	162		add rast, __signed_stack_001main, s5
+0	112	166	#line 112 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	112	166	#line 112 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	112	166	#line 112 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	113	166		mov __signed_stack_001main, rast
+0	112	168	#line 112 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	112	168	#line 112 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	113	168		set __D0main, 80
+0	112	171	#line 112 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	113	171		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	112	175	#line 112 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	113	175		mov __D0main, __zfmain
+0	113	177	#line 113 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	114	177		brtst 4, __NXC_Label_723, __zfmain
+0	114	180	#line 114 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	115	180		subcall ScanBall, __ScanBall_return
+0	114	182	#line 114 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	117	182	#line 117 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	118	182		jmp __NXC_Label_724
+0	118	184	#line 118 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	119	184		subcall gotoball, __gotoball_return
+0	118	186	#line 118 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	121	186	#line 121 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	123	186	#line 123 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	124	186		jmp __NXC_Label_715
+0	123	188	#line 123 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+0	124	188		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5710	0	#pragma macro 25
+2	5710	0		acquire __CLSWMutex1
+2	5710	1		set __CLSWArgs1.Port, 1
+2	5710	4		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+2	5710	6		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+2	5710	8		syscall 21, __CLSWArgs1
+2	5710	11		mov __RLSBResult1, __CLSWArgs1.Result
+2	5710	13		release __CLSWMutex1
+2	5710	14	#line 5710 "NXTDefs.h"
+2	5711	14		brtst 4, __RLSBReturn1, __RLSBytesCount1
+2	5712	17		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+2	5713	21		brtst 5, __RLSBError1, __RLSBResult1
+2	5714	24		set __RLSBIterations1, 4
+2	5716	27	#pragma macro 23
+2	5716	27		acquire __CLSCSMutex1
+2	5716	28		set __CLSCSArgs1.Port, 1
+2	5716	31		syscall 23, __CLSCSArgs1
+2	5716	34		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+2	5716	36		mov __RLSBResult1, __CLSCSArgs1.Result
+2	5716	38		release __CLSCSMutex1
+2	5716	39	#line 5716 "NXTDefs.h"
+2	5717	39		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+2	5718	43		brtst 2, __RLSBError1, __RLSBIterations1
+2	5719	46		brtst 0, __RLSBError1, __RLSBResult1
+2	5720	49		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+2	5722	52		wait2 NA, __constVal15
+2	5723	55		jmp __RLSBDoCheckStatus1
+2	5726	57	#pragma macro 25
+2	5726	57		acquire __CLSRMutex1
+2	5726	58		set __CLSRArgs1.Port, 1
+2	5726	61		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+2	5726	63		syscall 22, __CLSRArgs1
+2	5726	66		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+2	5726	68		mov __RLSBResult1, __CLSRArgs1.Result
+2	5726	70		release __CLSRMutex1
+2	5726	71	#line 5726 "NXTDefs.h"
+2	5727	71		brtst 5, __RLSBError1, __RLSBResult1
+2	5728	74		mov __RLSLastGoodRead1, __RLSReadBuf1
+2	5729	76		jmp __RLSBDone1
+2	5731	78		mov __RLSReadBuf1, __RLSLastGoodRead1
+2	5733	80		arrsize __RLSBytesCount1, __RLSReadBuf1
+2	5735	83		subret ____ReadLSBytes1_return
+3	5747	0	#pragma macro 25
+3	5747	0		acquire __CLSWMutex2
+3	5747	1		set __CLSWArgs2.Port, 2
+3	5747	4		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+3	5747	6		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+3	5747	8		syscall 21, __CLSWArgs2
+3	5747	11		mov __RLSBResult2, __CLSWArgs2.Result
+3	5747	13		release __CLSWMutex2
+3	5747	14	#line 5747 "NXTDefs.h"
+3	5748	14		brtst 4, __RLSBReturn2, __RLSBytesCount2
+3	5749	17		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+3	5750	21		brtst 5, __RLSBError2, __RLSBResult2
+3	5751	24		set __RLSBIterations2, 4
+3	5753	27	#pragma macro 23
+3	5753	27		acquire __CLSCSMutex2
+3	5753	28		set __CLSCSArgs2.Port, 2
+3	5753	31		syscall 23, __CLSCSArgs2
+3	5753	34		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+3	5753	36		mov __RLSBResult2, __CLSCSArgs2.Result
+3	5753	38		release __CLSCSMutex2
+3	5753	39	#line 5753 "NXTDefs.h"
+3	5754	39		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+3	5755	43		brtst 2, __RLSBError2, __RLSBIterations2
+3	5756	46		brtst 0, __RLSBError2, __RLSBResult2
+3	5757	49		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+3	5759	52		wait2 NA, __constVal15
+3	5760	55		jmp __RLSBDoCheckStatus2
+3	5763	57	#pragma macro 25
+3	5763	57		acquire __CLSRMutex2
+3	5763	58		set __CLSRArgs2.Port, 2
+3	5763	61		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+3	5763	63		syscall 22, __CLSRArgs2
+3	5763	66		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+3	5763	68		mov __RLSBResult2, __CLSRArgs2.Result
+3	5763	70		release __CLSRMutex2
+3	5763	71	#line 5763 "NXTDefs.h"
+3	5764	71		brtst 5, __RLSBError2, __RLSBResult2
+3	5765	74		mov __RLSLastGoodRead2, __RLSReadBuf2
+3	5766	76		jmp __RLSBDone2
+3	5768	78		mov __RLSReadBuf2, __RLSLastGoodRead2
+3	5770	80		arrsize __RLSBytesCount2, __RLSReadBuf2
+3	5772	83		subret ____ReadLSBytes2_return
+4	7	0	#line 7 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	8	0	#pragma macro 36
+4	8	0		acquire __RLSBmutex1
+4	8	1		arrbuild __RLSReadBuf1, __constVal16, __constVal73
+4	8	6		set __RLSBytesCount1, 6
+4	8	9		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+4	8	11		tst 4, __D0ScanBall, __RLSBResult1
+4	8	14		index dir, __RLSReadBuf1, 65535
+4	8	18		index s1, __RLSReadBuf1, __constVal1
+4	8	22		index s2, __RLSReadBuf1, __constVal2
+4	8	26		index s3, __RLSReadBuf1, __constVal3
+4	8	30		index s4, __RLSReadBuf1, __constVal4
+4	8	34		index s5, __RLSReadBuf1, __constVal5
+4	8	38		release __RLSBmutex1
+4	3869	39	#line 3869 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	7	39	#line 7 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	7	39	#line 7 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	8	39	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	8	39	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	8	39	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	8	39	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	9	39		add __signed_stack_001ScanBall, s1, s2
+4	8	43	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	8	43	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	8	43	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	9	43		add __signed_stack_001ScanBall, __signed_stack_001ScanBall, s3
+4	8	47	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	8	47	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	8	47	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	9	47		add __signed_stack_001ScanBall, __signed_stack_001ScanBall, s4
+4	8	51	#line 8 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	11	51	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	11	51	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	11	51	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	11	51	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	11	51	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	11	51	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	11	51	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	12	51		sub __signed_stack_001ScanBall, dir, __constVal5
+4	11	55	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	11	55	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	12	55		set __D0ScanBall, 0
+4	11	58	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	12	58		cmp 0, __zfScanBall, __signed_stack_001ScanBall, __D0ScanBall
+4	11	62	#line 11 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	12	62		mov __D0ScanBall, __zfScanBall
+4	12	64	#line 12 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	13	64		brtst 4, __NXC_Label_493, __zfScanBall
+4	12	67	#line 12 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	13	67		set __D0ScanBall, 50
+4	13	70	#line 13 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	14	70	#pragma macro 7
+4	14	70		setout __constVal2, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3931	93	#line 3931 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	13	93	#line 13 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	13	93	#line 13 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	14	93		mov __D0ScanBall, __constValNeg50
+4	14	95	#line 14 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	15	95	#pragma macro 7
+4	15	95		setout __constVal1, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3938	118	#line 3938 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	14	118	#line 14 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	15	118	#line 15 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	15	118	#line 15 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	15	118	#line 15 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	15	118	#line 15 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	15	118	#line 15 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	16	118		sub __signed_stack_001ScanBall, dir, __constVal5
+4	15	122	#line 15 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	15	122	#line 15 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	16	122		set __D0ScanBall, 0
+4	15	125	#line 15 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	16	125		cmp 1, __zfScanBall, __signed_stack_001ScanBall, __D0ScanBall
+4	15	129	#line 15 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	16	129		mov __D0ScanBall, __zfScanBall
+4	16	131	#line 16 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	17	131		brtst 4, __NXC_Label_500, __zfScanBall
+4	16	134	#line 16 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	17	134		mov __D0ScanBall, __constValNeg50
+4	17	136	#line 17 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	18	136	#pragma macro 7
+4	18	136		setout __constVal2, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3967	159	#line 3967 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	17	159	#line 17 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	17	159	#line 17 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	18	159		set __D0ScanBall, 50
+4	18	162	#line 18 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	19	162	#pragma macro 7
+4	19	162		setout __constVal1, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	3974	185	#line 3974 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	18	185	#line 18 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	19	185	#line 19 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	19	185	#line 19 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	19	185	#line 19 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	19	185	#line 19 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	19	185	#line 19 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	20	185		sub __signed_stack_001ScanBall, dir, __constVal5
+4	19	189	#line 19 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	19	189	#line 19 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	20	189		set __D0ScanBall, 0
+4	19	192	#line 19 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	20	192		cmp 4, __zfScanBall, __signed_stack_001ScanBall, __D0ScanBall
+4	19	196	#line 19 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	20	196		mov __D0ScanBall, __zfScanBall
+4	20	198	#line 20 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	21	198		brtst 4, __NXC_Label_507, __zfScanBall
+4	20	201	#line 20 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	21	201		set __D0ScanBall, 0
+4	21	204	#line 21 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	22	204	#pragma macro 7
+4	22	204		setout __constVal2, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4003	227	#line 4003 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	21	227	#line 21 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	21	227	#line 21 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	22	227		set __D0ScanBall, 0
+4	22	230	#line 22 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	23	230	#pragma macro 7
+4	23	230		setout __constVal1, 2, __D0ScanBall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4010	253	#line 4010 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	22	253	#line 22 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	27	253	#line 27 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	27	253	#line 27 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+4	28	253		subret __ScanBall_return
+5	28	0	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	0		set __signed_stack_001kalibrovka, 3
+5	28	3	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	28	3	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	3		set __D0kalibrovka, 0
+5	28	6	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	28	6	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	6		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	28	8	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	8		mov __RBtnArgs.Reset, __D0kalibrovka
+5	28	10	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	10		syscall 20, __RBtnArgs
+5	28	13	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	13		mov __signed_stack_001kalibrovka, __RBtnArgs.Pressed
+5	28	15	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	28	15	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	28	15	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	15		set __D0kalibrovka, 0
+5	28	18	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	18		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	28	22	#line 28 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	22		mov __D0kalibrovka, __zfkalibrovka
+5	29	24	#line 29 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	30	24		brtst 4, __NXC_Label_513, __zfkalibrovka
+5	29	27	#line 29 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	30	27	#pragma macro 30
+5	30	27		acquire __RLSBmutex2
+5	30	28		mov __RLSReadBuf2, __RLSBbufLSWrite1
+5	30	30		set __RLSBytesCount2, 2
+5	30	33		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+5	30	35		index __D0kalibrovka, __RLSReadBuf2, 65535
+5	30	39		index __RLSBytesCount2, __RLSReadBuf2, __constVal1
+5	30	43		add __D0kalibrovka, __D0kalibrovka, __D0kalibrovka
+5	30	47		add __D0kalibrovka, __D0kalibrovka, __RLSBytesCount2
+5	30	51		release __RLSBmutex2
+5	4055	52	#line 4055 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	52	#line 29 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	52	#line 29 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	29	52	#line 29 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	31	52	#line 31 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	52		jmp __NXC_Label_512
+5	31	54	#line 31 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	31	54	#line 31 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	54		set __signed_stack_001kalibrovka, 1780
+5	31	57	#line 31 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	31	57	#line 31 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	57		set __signed_stack_002kalibrovka, 500
+5	31	60	#line 31 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	31	60	#line 31 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	60		set __signed_stack_003kalibrovka, 4
+5	31	63	#line 31 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	31	63	#line 31 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	63		set __D0kalibrovka, 0
+5	32	66	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	66		acquire __SPTArgsMutex
+5	32	67	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	67		mov __SPTArgs.Frequency, __signed_stack_001kalibrovka
+5	32	69	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	69		mov __SPTArgs.Duration, __signed_stack_002kalibrovka
+5	32	71	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	71		mov __SPTArgs.Volume, __signed_stack_003kalibrovka
+5	32	73	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	73		mov __SPTArgs.Loop, __D0kalibrovka
+5	32	75	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	75		syscall 10, __SPTArgs
+5	32	78	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	78		mov __D0kalibrovka, __SPTArgs.Result
+5	32	80	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	80		release __SPTArgsMutex
+5	32	81	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	81	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	81		set __signed_stack_001kalibrovka, 3
+5	32	84	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	84	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	84		set __D0kalibrovka, 0
+5	32	87	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	87	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	87		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	32	89	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	89		mov __RBtnArgs.Reset, __D0kalibrovka
+5	32	91	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	91		syscall 20, __RBtnArgs
+5	32	94	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	94		mov __signed_stack_001kalibrovka, __RBtnArgs.Pressed
+5	32	96	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	96	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	32	96	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	96		set __D0kalibrovka, 1
+5	32	99	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	99		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	32	103	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	103		mov __D0kalibrovka, __zfkalibrovka
+5	32	105	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	105		brtst 4, __NXC_Label_531, __zfkalibrovka
+5	32	108	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	33	108		set __Wait_7qG2_ms_7qG2_000_inline_kalibrovka, 50
+5	32	111	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	7921	111	#line 7921 "NXCDefs.h"
+5	7922	111		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_kalibrovka
+5	7921	114	#line 7921 "NXCDefs.h"
+5	32	114	#line 32 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	34	114	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	114		jmp __NXC_Label_530
+5	34	116	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	34	116	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	116		set __signed_stack_001kalibrovka, 3
+5	34	119	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	34	119	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	119		set __D0kalibrovka, 0
+5	34	122	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	34	122	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	122		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	34	124	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	124		mov __RBtnArgs.Reset, __D0kalibrovka
+5	34	126	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	126		syscall 20, __RBtnArgs
+5	34	129	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	129		mov __signed_stack_001kalibrovka, __RBtnArgs.Pressed
+5	34	131	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	34	131	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	34	131	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	131		set __D0kalibrovka, 0
+5	34	134	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	134		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	34	138	#line 34 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	138		mov __D0kalibrovka, __zfkalibrovka
+5	35	140	#line 35 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	36	140		brtst 4, __NXC_Label_541, __zfkalibrovka
+5	35	143	#line 35 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	36	143	#pragma macro 30
+5	36	143		acquire __RLSBmutex2
+5	36	144		mov __RLSReadBuf2, __RLSBbufLSWrite1
+5	36	146		set __RLSBytesCount2, 2
+5	36	149		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+5	36	151		index __D0kalibrovka, __RLSReadBuf2, 65535
+5	36	155		index __RLSBytesCount2, __RLSReadBuf2, __constVal1
+5	36	159		add __D0kalibrovka, __D0kalibrovka, __D0kalibrovka
+5	36	163		add __D0kalibrovka, __D0kalibrovka, __RLSBytesCount2
+5	36	167		release __RLSBmutex2
+5	4194	168	#line 4194 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	168	#line 35 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	168	#line 35 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	35	168	#line 35 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	37	168	#line 37 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	168		jmp __NXC_Label_540
+5	37	170	#line 37 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	37	170	#line 37 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	170		set __signed_stack_001kalibrovka, 1780
+5	37	173	#line 37 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	37	173	#line 37 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	173		set __signed_stack_002kalibrovka, 500
+5	37	176	#line 37 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	37	176	#line 37 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	176		set __signed_stack_003kalibrovka, 4
+5	37	179	#line 37 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	37	179	#line 37 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	179		set __D0kalibrovka, 0
+5	38	182	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	182		acquire __SPTArgsMutex
+5	38	183	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	183		mov __SPTArgs.Frequency, __signed_stack_001kalibrovka
+5	38	185	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	185		mov __SPTArgs.Duration, __signed_stack_002kalibrovka
+5	38	187	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	187		mov __SPTArgs.Volume, __signed_stack_003kalibrovka
+5	38	189	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	189		mov __SPTArgs.Loop, __D0kalibrovka
+5	38	191	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	191		syscall 10, __SPTArgs
+5	38	194	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	194		mov __D0kalibrovka, __SPTArgs.Result
+5	38	196	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	196		release __SPTArgsMutex
+5	38	197	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	197	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	197		set __signed_stack_001kalibrovka, 3
+5	38	200	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	200	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	200		set __D0kalibrovka, 0
+5	38	203	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	203	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	203		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	38	205	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	205		mov __RBtnArgs.Reset, __D0kalibrovka
+5	38	207	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	207		syscall 20, __RBtnArgs
+5	38	210	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	210		mov __signed_stack_001kalibrovka, __RBtnArgs.Pressed
+5	38	212	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	212	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	38	212	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	212		set __D0kalibrovka, 1
+5	38	215	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	215		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	38	219	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	219		mov __D0kalibrovka, __zfkalibrovka
+5	38	221	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	221		brtst 4, __NXC_Label_559, __zfkalibrovka
+5	38	224	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	224		set __Wait_7qG2_ms_7qG2_000_inline_kalibrovka, 50
+5	38	227	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	7921	227	#line 7921 "NXCDefs.h"
+5	7922	227		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_kalibrovka
+5	7921	230	#line 7921 "NXCDefs.h"
+5	38	230	#line 38 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	230	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	230		jmp __NXC_Label_558
+5	39	232	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	232	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	232		set __signed_stack_001kalibrovka, 3
+5	39	235	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	235	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	235		set __D0kalibrovka, 0
+5	39	238	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	238	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	238		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	39	240	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	240		mov __RBtnArgs.Reset, __D0kalibrovka
+5	39	242	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	242		syscall 20, __RBtnArgs
+5	39	245	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	245		mov __signed_stack_001kalibrovka, __RBtnArgs.Pressed
+5	39	247	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	247	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	39	247	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	247		set __D0kalibrovka, 0
+5	39	250	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	250		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	39	254	#line 39 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	254		mov __D0kalibrovka, __zfkalibrovka
+5	40	256	#line 40 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	41	256		brtst 4, __NXC_Label_569, __zfkalibrovka
+5	40	259	#line 40 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	41	259	#pragma macro 30
+5	41	259		acquire __RLSBmutex2
+5	41	260		mov __RLSReadBuf2, __RLSBbufLSWrite1
+5	41	262		set __RLSBytesCount2, 2
+5	41	265		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+5	41	267		index __D0kalibrovka, __RLSReadBuf2, 65535
+5	41	271		index __RLSBytesCount2, __RLSReadBuf2, __constVal1
+5	41	275		add __D0kalibrovka, __D0kalibrovka, __D0kalibrovka
+5	41	279		add __D0kalibrovka, __D0kalibrovka, __RLSBytesCount2
+5	41	283		release __RLSBmutex2
+5	4329	284	#line 4329 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	284	#line 40 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	284	#line 40 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	40	284	#line 40 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	42	284	#line 42 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	284		jmp __NXC_Label_568
+5	42	286	#line 42 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	42	286	#line 42 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	286		set __signed_stack_001kalibrovka, 1780
+5	42	289	#line 42 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	42	289	#line 42 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	289		set __signed_stack_002kalibrovka, 500
+5	42	292	#line 42 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	42	292	#line 42 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	292		set __signed_stack_003kalibrovka, 4
+5	42	295	#line 42 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	42	295	#line 42 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	295		set __D0kalibrovka, 0
+5	43	298	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	298		acquire __SPTArgsMutex
+5	43	299	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	299		mov __SPTArgs.Frequency, __signed_stack_001kalibrovka
+5	43	301	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	301		mov __SPTArgs.Duration, __signed_stack_002kalibrovka
+5	43	303	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	303		mov __SPTArgs.Volume, __signed_stack_003kalibrovka
+5	43	305	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	305		mov __SPTArgs.Loop, __D0kalibrovka
+5	43	307	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	307		syscall 10, __SPTArgs
+5	43	310	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	310		mov __D0kalibrovka, __SPTArgs.Result
+5	43	312	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	312		release __SPTArgsMutex
+5	43	313	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	313	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	313		set __signed_stack_001kalibrovka, 3
+5	43	316	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	316	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	316		set __D0kalibrovka, 0
+5	43	319	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	319	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	319		mov __RBtnArgs.Index, __signed_stack_001kalibrovka
+5	43	321	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	321		mov __RBtnArgs.Reset, __D0kalibrovka
+5	43	323	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	323		syscall 20, __RBtnArgs
+5	43	326	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	326		mov __signed_stack_001kalibrovka, __RBtnArgs.Pressed
+5	43	328	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	328	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	43	328	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	328		set __D0kalibrovka, 1
+5	43	331	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	331		cmp 4, __zfkalibrovka, __signed_stack_001kalibrovka, __D0kalibrovka
+5	43	335	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	335		mov __D0kalibrovka, __zfkalibrovka
+5	43	337	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	337		brtst 4, __NXC_Label_587, __zfkalibrovka
+5	43	340	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	44	340		set __Wait_7qG2_ms_7qG2_000_inline_kalibrovka, 50
+5	43	343	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	7921	343	#line 7921 "NXCDefs.h"
+5	7922	343		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_kalibrovka
+5	7921	346	#line 7921 "NXCDefs.h"
+5	43	346	#line 43 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	46	346	#line 46 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	47	346		jmp __NXC_Label_586
+5	46	348	#line 46 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	46	348	#line 46 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+5	47	348		subret __kalibrovka_return
+6	57	0	#line 57 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	58	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_gotoball, 1
+6	57	3	#line 57 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	58	3	#line 58 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_gotoball, __constVal1
+6	3758	5	#line 3758 "NXCDefs.h"
+6	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_gotoball, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_gotoball
+6	3758	7	#line 3758 "NXCDefs.h"
+6	3758	7	#line 3758 "NXCDefs.h"
+6	3759	7		mov __DU0SetSensorLowspeed_inline_gotoball, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_gotoball
+6	3758	9	#line 3758 "NXCDefs.h"
+6	3759	9		tst 5, __zfSetSensorLowspeed_inline_gotoball, __DU0SetSensorLowspeed_inline_gotoball
+6	3758	12	#line 3758 "NXCDefs.h"
+6	3759	12		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_gotoball
+6	3758	15	#line 3758 "NXCDefs.h"
+6	3759	15		set __D0SetSensorLowspeed_inline_gotoball, 11
+6	3758	18	#line 3758 "NXCDefs.h"
+6	3759	18		jmp __004__NXC_Label_37
+6	3758	20	#line 3758 "NXCDefs.h"
+6	3759	20		set __D0SetSensorLowspeed_inline_gotoball, 10
+6	3758	23	#line 3758 "NXCDefs.h"
+6	3759	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_gotoball, __D0SetSensorLowspeed_inline_gotoball
+6	3663	25	#line 3663 "NXCDefs.h"
+6	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_gotoball, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_gotoball, 0
+6	3663	29	#line 3663 "NXCDefs.h"
+6	3759	29	#line 3759 "NXCDefs.h"
+6	3759	29	#line 3759 "NXCDefs.h"
+6	3760	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_gotoball, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_gotoball
+6	3759	31	#line 3759 "NXCDefs.h"
+6	3759	31	#line 3759 "NXCDefs.h"
+6	3760	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_gotoball, 0
+6	3759	34	#line 3759 "NXCDefs.h"
+6	3676	34	#line 3676 "NXCDefs.h"
+6	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_gotoball, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_gotoball, 1
+6	3676	38	#line 3676 "NXCDefs.h"
+6	3760	38	#line 3760 "NXCDefs.h"
+6	3760	38	#line 3760 "NXCDefs.h"
+6	3761	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_gotoball, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_gotoball
+6	3760	40	#line 3760 "NXCDefs.h"
+6	3694	40	#line 3694 "NXCDefs.h"
+6	3695	40	#pragma macro 4
+6	3695	40		acquire __ResetSensorMutex
+6	3695	41		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_gotoball
+6	3695	43		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+6	3695	45		release __ResetSensorMutex
+6	4647	46	#line 4647 "NXCDefs.h"
+6	3694	46	#line 3694 "NXCDefs.h"
+6	3761	46	#line 3761 "NXCDefs.h"
+6	58	46	#line 58 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	58	46	#line 58 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	46	#pragma macro 36
+6	59	46		acquire __RLSBmutex1
+6	59	47		arrbuild __RLSReadBuf1, __constVal16, __constVal73
+6	59	52		set __RLSBytesCount1, 6
+6	59	55		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+6	59	57		tst 4, __D0gotoball, __RLSBResult1
+6	59	60		index dir, __RLSReadBuf1, 65535
+6	59	64		index s1, __RLSReadBuf1, __constVal1
+6	59	68		index s2, __RLSReadBuf1, __constVal2
+6	59	72		index s3, __RLSReadBuf1, __constVal3
+6	59	76		index s4, __RLSReadBuf1, __constVal4
+6	59	80		index s5, __RLSReadBuf1, __constVal5
+6	59	84		release __RLSBmutex1
+6	4652	85	#line 4652 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	58	85	#line 58 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	58	85	#line 58 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	85	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	85		set __signed_stack_001gotoball, 0
+6	59	88	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	88	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	88		set __signed_stack_002gotoball, 40
+6	59	91	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	91	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	91		strcat __strbufgotoball, __constStr0009
+6	59	95	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	95	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	95		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	59	97	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	97		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	59	99	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	99		set __TextOutArgs.Options, 0
+6	59	102	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	102		mov __TextOutArgs.Text, __strbufgotoball
+6	59	104	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	104		syscall 13, __TextOutArgs
+6	59	107	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	107	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	107	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	107	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	107		set __signed_stack_001gotoball, 24
+6	59	110	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	110	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	110		set __signed_stack_002gotoball, 40
+6	59	113	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	59	113	#line 59 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	113		mov __D0gotoball, dir
+6	60	115	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	115	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	115		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	60	117	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	117		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	60	119	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	119		set __TextOutArgs.Options, 0
+6	60	122	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	122		numtostr __TextOutArgs.Text, __D0gotoball
+6	60	125	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	125		syscall 13, __TextOutArgs
+6	60	128	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	128	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	128	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	128	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	128		set __signed_stack_001gotoball, 6
+6	60	131	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	131	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	131		set __signed_stack_002gotoball, 32
+6	60	134	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	134	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	134		strcat __strbufgotoball, __constStr0010
+6	60	138	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	138	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	138		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	60	140	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	140		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	60	142	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	142		set __TextOutArgs.Options, 0
+6	60	145	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	145		mov __TextOutArgs.Text, __strbufgotoball
+6	60	147	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	147		syscall 13, __TextOutArgs
+6	60	150	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	150	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	150	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	150	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	150		set __signed_stack_001gotoball, 24
+6	60	153	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	153	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	153		set __signed_stack_002gotoball, 32
+6	60	156	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	60	156	#line 60 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	156		mov __D0gotoball, s1
+6	61	158	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	158	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	158		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	61	160	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	160		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	61	162	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	162		set __TextOutArgs.Options, 0
+6	61	165	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	165		numtostr __TextOutArgs.Text, __D0gotoball
+6	61	168	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	168		syscall 13, __TextOutArgs
+6	61	171	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	171	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	171	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	171	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	171		set __signed_stack_001gotoball, 6
+6	61	174	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	174	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	174		set __signed_stack_002gotoball, 24
+6	61	177	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	177	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	177		strcat __strbufgotoball, __constStr0011
+6	61	181	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	181	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	181		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	61	183	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	183		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	61	185	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	185		set __TextOutArgs.Options, 0
+6	61	188	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	188		mov __TextOutArgs.Text, __strbufgotoball
+6	61	190	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	190		syscall 13, __TextOutArgs
+6	61	193	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	193	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	193	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	193	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	193		set __signed_stack_001gotoball, 24
+6	61	196	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	196	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	196		set __signed_stack_002gotoball, 24
+6	61	199	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	61	199	#line 61 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	199		mov __D0gotoball, s2
+6	62	201	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	201	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	201		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	62	203	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	203		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	62	205	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	205		set __TextOutArgs.Options, 0
+6	62	208	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	208		numtostr __TextOutArgs.Text, __D0gotoball
+6	62	211	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	211		syscall 13, __TextOutArgs
+6	62	214	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	214	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	214	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	214	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	214		set __signed_stack_001gotoball, 6
+6	62	217	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	217	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	217		set __signed_stack_002gotoball, 16
+6	62	220	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	220	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	220		strcat __strbufgotoball, __constStr0012
+6	62	224	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	224	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	224		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	62	226	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	226		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	62	228	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	228		set __TextOutArgs.Options, 0
+6	62	231	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	231		mov __TextOutArgs.Text, __strbufgotoball
+6	62	233	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	233		syscall 13, __TextOutArgs
+6	62	236	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	236	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	236	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	236	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	236		set __signed_stack_001gotoball, 24
+6	62	239	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	239	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	239		set __signed_stack_002gotoball, 16
+6	62	242	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	62	242	#line 62 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	242		mov __D0gotoball, s3
+6	63	244	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	244	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	244		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	63	246	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	246		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	63	248	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	248		set __TextOutArgs.Options, 0
+6	63	251	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	251		numtostr __TextOutArgs.Text, __D0gotoball
+6	63	254	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	254		syscall 13, __TextOutArgs
+6	63	257	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	257	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	257	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	257	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	257		set __signed_stack_001gotoball, 6
+6	63	260	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	260	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	260		set __signed_stack_002gotoball, 8
+6	63	263	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	263	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	263		strcat __strbufgotoball, __constStr0013
+6	63	267	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	267	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	267		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	63	269	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	269		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	63	271	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	271		set __TextOutArgs.Options, 0
+6	63	274	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	274		mov __TextOutArgs.Text, __strbufgotoball
+6	63	276	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	276		syscall 13, __TextOutArgs
+6	63	279	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	279	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	279	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	279	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	279		set __signed_stack_001gotoball, 24
+6	63	282	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	282	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	282		set __signed_stack_002gotoball, 8
+6	63	285	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	63	285	#line 63 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	285		mov __D0gotoball, s4
+6	64	287	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	287	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	287		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	64	289	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	289		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	64	291	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	291		set __TextOutArgs.Options, 0
+6	64	294	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	294		numtostr __TextOutArgs.Text, __D0gotoball
+6	64	297	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	297		syscall 13, __TextOutArgs
+6	64	300	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	300	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	300	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	300	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	300		set __signed_stack_001gotoball, 6
+6	64	303	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	303	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	303		set __signed_stack_002gotoball, 0
+6	64	306	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	306	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	306		strcat __strbufgotoball, __constStr0014
+6	64	310	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	310	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	310		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	64	312	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	312		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	64	314	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	314		set __TextOutArgs.Options, 0
+6	64	317	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	317		mov __TextOutArgs.Text, __strbufgotoball
+6	64	319	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	319		syscall 13, __TextOutArgs
+6	64	322	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	322	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	322	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	322	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	322		set __signed_stack_001gotoball, 24
+6	64	325	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	325	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	325		set __signed_stack_002gotoball, 0
+6	64	328	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	64	328	#line 64 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	65	328		mov __D0gotoball, s5
+6	66	330	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	66	330	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	67	330		mov __TextOutArgs.Location.X, __signed_stack_001gotoball
+6	66	332	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	67	332		mov __TextOutArgs.Location.Y, __signed_stack_002gotoball
+6	66	334	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	67	334		set __TextOutArgs.Options, 0
+6	66	337	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	67	337		numtostr __TextOutArgs.Text, __D0gotoball
+6	66	340	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	67	340		syscall 13, __TextOutArgs
+6	66	343	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	66	343	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	66	343	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	66	343	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	67	343		mov __signed_stack_001gotoball, dir
+6	66	345	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	66	345	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	67	345		set __D0gotoball, 5
+6	66	348	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	67	348		cmp 4, __zfgotoball, __signed_stack_001gotoball, __D0gotoball
+6	66	352	#line 66 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	67	352		mov __D0gotoball, __zfgotoball
+6	67	354	#line 67 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	68	354		brtst 4, __NXC_Label_676, __zfgotoball
+6	67	357	#line 67 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	68	357		set __D0gotoball, 0
+6	68	360	#line 68 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	69	360	#pragma macro 7
+6	69	360		setout __OUT_BC, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5058	383	#line 5058 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	68	383	#line 68 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	68	383	#line 68 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	69	383		mov __D0gotoball, __constValNeg100
+6	70	385	#line 70 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	71	385	#pragma macro 7
+6	71	385		setout __OUT_BC, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5065	408	#line 5065 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	70	408	#line 70 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	71	408	#line 71 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	71	408	#line 71 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	72	408		mov __signed_stack_001gotoball, dir
+6	71	410	#line 71 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	71	410	#line 71 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	72	410		set __D0gotoball, 5
+6	71	413	#line 71 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	72	413		cmp 0, __zfgotoball, __signed_stack_001gotoball, __D0gotoball
+6	71	417	#line 71 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	72	417		mov __D0gotoball, __zfgotoball
+6	72	419	#line 72 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	73	419		brtst 4, __NXC_Label_683, __zfgotoball
+6	72	422	#line 72 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	73	422		set __D0gotoball, 0
+6	73	425	#line 73 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	74	425	#pragma macro 7
+6	74	425		setout __OUT_BC, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5088	448	#line 5088 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	73	448	#line 73 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	73	448	#line 73 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	74	448		mov __D0gotoball, __constValNeg100
+6	74	450	#line 74 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	75	450	#pragma macro 7
+6	75	450		setout __constVal1, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5095	473	#line 5095 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	74	473	#line 74 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	74	473	#line 74 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	75	473		set __D0gotoball, 100
+6	75	476	#line 75 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	76	476	#pragma macro 7
+6	76	476		setout __constVal2, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5102	499	#line 5102 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	75	499	#line 75 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	76	499	#line 76 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	76	499	#line 76 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	77	499		mov __signed_stack_001gotoball, dir
+6	76	501	#line 76 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	76	501	#line 76 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	77	501		set __D0gotoball, 5
+6	76	504	#line 76 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	77	504		cmp 1, __zfgotoball, __signed_stack_001gotoball, __D0gotoball
+6	76	508	#line 76 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	77	508		mov __D0gotoball, __zfgotoball
+6	77	510	#line 77 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	78	510		brtst 4, __NXC_Label_692, __zfgotoball
+6	77	513	#line 77 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	78	513		set __D0gotoball, 0
+6	78	516	#line 78 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	79	516	#pragma macro 7
+6	79	516		setout __OUT_BC, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5125	539	#line 5125 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	78	539	#line 78 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	78	539	#line 78 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	79	539		mov __D0gotoball, __constValNeg100
+6	79	541	#line 79 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	80	541	#pragma macro 7
+6	80	541		setout __constVal2, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5132	564	#line 5132 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	79	564	#line 79 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	79	564	#line 79 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	80	564		set __D0gotoball, 100
+6	80	567	#line 80 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	567	#pragma macro 7
+6	81	567		setout __constVal1, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5139	590	#line 5139 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	80	590	#line 80 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	590	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	590	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	590	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	590	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	590	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	82	590		add __signed_stack_001gotoball, s1, s2
+6	81	594	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	594	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	594	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	82	594		add __signed_stack_001gotoball, __signed_stack_001gotoball, s3
+6	81	598	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	598	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	81	598	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	82	598		add __signed_stack_001gotoball, __signed_stack_001gotoball, s4
+6	81	602	#line 81 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	82	602	#line 82 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	82	602	#line 82 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	83	602		add rast, __signed_stack_001gotoball, s5
+6	82	606	#line 82 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	82	606	#line 82 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	82	606	#line 82 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	83	606		mov __signed_stack_001gotoball, rast
+6	82	608	#line 82 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	83	608	#line 83 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	84	608		set __D0gotoball, 80
+6	83	611	#line 83 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	84	611		cmp 1, __zfgotoball, __signed_stack_001gotoball, __D0gotoball
+6	83	615	#line 83 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	84	615		mov __D0gotoball, __zfgotoball
+6	84	617	#line 84 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	85	617		brtst 4, __NXC_Label_703, __zfgotoball
+6	84	620	#line 84 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	85	620		mov __D0gotoball, __constValNeg100
+6	85	622	#line 85 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	86	622	#pragma macro 7
+6	86	622		setout __constVal0, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5193	645	#line 5193 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	85	645	#line 85 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	88	645	#line 88 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	89	645		jmp __NXC_Label_706
+6	88	647	#line 88 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	89	647		set __D0gotoball, 0
+6	89	650	#line 89 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	90	650	#pragma macro 7
+6	90	650		setout __constVal0, 2, __D0gotoball, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5203	673	#line 5203 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	89	673	#line 89 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	92	673	#line 92 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	92	673	#line 92 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+6	93	673		subret __gotoball_return
+7	124	0	#line 124 "C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc"
+7	125	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc
+1	__ResetSensorSubroutine	191	NXTDefs.h
+2	__ReadLSBytes1	204	NXTDefs.h
+3	__ReadLSBytes2	289	NXTDefs.h
+4	ScanBall	374	C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc
+5	kalibrovka	629	C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc
+6	gotoball	979	C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc
+7	__initialize_global_data	1654	C:\WorksBeslnGetagazov\ProgramForRoboFutboll.nxc

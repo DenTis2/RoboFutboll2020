@@ -6,7 +6,7 @@ SetSensorColorFull(IN_4);
   TextNumOut(0, LCD_LINE3, "Dir:    ",4,SENSOR_4);
   if(SENSOR_4 == 3){
    OnFwd(OUT_BC,100);
-   Wait(100);
+   Wait(10000);
   }
   else{
    OnFwd(OUT_BC,-100);
