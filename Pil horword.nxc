@@ -1,0 +1,131 @@
+#define IRSEEKER IN_2
+#define TextNumOut(xPos,yPos,str,col,num)  TextOut(xPos,yPos,str);NumOut(xPos+6*col,yPos,num)
+int azimut;
+int azimutRight;
+int azimutLeft;
+int dir, s1, s2, s3, s4, s5;
+int rast;
+void ScanBall() {
+     ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+     if(rast < 100) {
+      ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+      rast = s1 + s2 + s3 + s4 + s5;
+      if(dir - 4 < 0) {
+       OnFwd(OUT_C, 50);
+       OnFwd(OUT_B, -50);
+      }
+      if(dir - 4 > 0) {
+       OnFwd(OUT_C, -50);
+       OnFwd(OUT_B, 50);
+      }
+      if(dir - 4 == 0) {
+       OnFwd(OUT_C, 0);
+       OnFwd(OUT_B, 0);
+      }
+      TextNumOut(0, LCD_LINE3, "rast:    ",4,rast);
+     }
+}
+void kalibrovka() {
+ while(ButtonPressed(BTNCENTER, false) == 0) {
+  azimut = SensorHTCompass(IN_3);
+   }
+  PlayTone(1780, 500);
+   while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+    while(ButtonPressed(BTNCENTER, false) == 0) {
+     azimutRight = SensorHTCompass(IN_3);
+     }
+     PlayTone(1780, 500);
+     while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+        while(ButtonPressed(BTNCENTER, false) == 0) {
+    azimutLeft = SensorHTCompass(IN_3);
+    }
+      PlayTone(1780, 500);
+    while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+}
+void manevr(){
+
+}
+void findball(){
+ ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+ rast = s1 + s2 + s3 + s4 + s5;
+ if(dir==0||dir==4){
+ OnFwd(OUT_C,0);
+ OnFwd(OUT_B,0);
+ }
+ while(dir<4){
+ ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+ rast = s1 + s2 + s3 + s4 + s5;
+ OnFwd(OUT_C,75);
+ OnFwd(OUT_B,-75);
+ }
+ while(dir>4){
+ ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+ rast = s1 + s2 + s3 + s4 + s5;
+ OnFwd(OUT_C,-75);
+ OnFwd(OUT_B,75);
+ }
+}
+void gotoball(){
+
+}
+void obezd(){
+ int UP=(SENSOR_3+540-azimut);
+if(UP<0){
+ OnFwd(OUT_C,100);
+ OnFwd(OUT_B,-100);
+ //Wait(100);
+ //OnFwd(OUT_C,0);
+ //OnFwd(OUT_B,0);
+}
+else{
+ OnFwd(OUT_C,-100);
+ OnFwd(OUT_B,100);
+ //Wait(100);
+ //OnFwd(OUT_C,0);
+ //OnFwd(OUT_B,0);
+}
+}
+void attaka() {
+ while(rast >= 80 && SENSOR_3 == azimut){
+  OnFwd(OUT_ABC,100);
+  //Wait(100);
+  //OnFwd(OUT_ABC,0);
+ }
+}
+task main()
+{
+
+#ifdef __ENHANCED_FIRMWARE
+SetLongAbort(true);
+#endif
+SetSensorLowspeed(IN_3);
+SetSensorLowspeed(IRSEEKER);
+
+Wait(1000);
+kalibrovka();
+while(true)
+{
+findball();
+gotoball();
+//obezd();
+//attaka();
+int flagPause;
+
+ // Robot on Pause
+ if (flagPause) {
+	while(ButtonPressed(BTNCENTER, false) == 0) { Wait(50); }
+	 flagPause = 0;
+       PlayTone(1780, 500);
+	 while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+ }
+
+ // Robot off Pause
+ if (ButtonPressed(BTNCENTER, false) == 1 && flagPause == 0){
+	while(ButtonPressed(BTNCENTER, false) == 0) { Wait(50); }
+	 flagPause = 1;
+       PlayTone(1780, 500);
+	 while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+ }
+}
+
+}
