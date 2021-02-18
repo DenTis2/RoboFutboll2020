@@ -1,0 +1,173 @@
+
+#define IRSEEKER IN_2
+#define TextNumOut(xPos,yPos,str,col,num)  TextOut(xPos,yPos,str);NumOut(xPos+6*col,yPos,num)
+int s, x;
+int dir, s1, s2, s3, s4, s5, result, rast;
+int upLeft, upRight, upCenter;
+int azimut, azimutRight, azimutLeft;
+int up() {
+     int compass;
+     compass = SensorHTCompass(IN_3);
+
+     upCenter = (compass + 540 - azimut) % 360 - 180;
+     upLeft = (compass + 540 - azimutLeft) % 360 - 180;
+     upRight = (compass + 540 - azimutRight) % 360 - 180;
+     return upCenter;
+}
+void returnGoal() {
+    //Повернуться в левый борт
+    OnFwd(OUT_C, 0);
+    OnFwd(OUT_B, 0);
+    OnFwd(OUT_A, 0);
+    up();
+    while(upLeft != 0) {
+                up();
+                if(upLeft < 0) {
+                       OnFwd(OUT_C, 50);
+                       OnFwd(OUT_B, -50);
+                }
+                if(upLeft > 0) {
+                       OnFwd(OUT_C, -50);
+                       OnFwd(OUT_B, 50);
+                }
+                if(upLeft == 0) {
+                       OnFwd(OUT_C, 0);
+                       OnFwd(OUT_B, 0);
+                       PlayTone(1780, 500);
+                       //Wait(5000);
+                }
+    }
+    
+    
+    //ехать к центру до 93 сантиметров
+    x = SensorUS(IN_1);
+    while(x != 93) {
+         x = SensorUS(IN_1);
+         if(x - 93 > 0) {
+              OnFwd(OUT_BC, 50);
+              
+         }    else {
+             OnFwd(OUT_BC, -50);
+         }
+    }
+    
+    
+    // Повернуться на ворота
+    // Двиггаться к воротам
+
+
+}
+void ScanBall() {
+     ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+     int rast = s1 + s2 + s3 + s4 + s5;
+     //while(rast < 100) {
+
+                if(dir - 5 < 0) {
+                       OnFwd(OUT_C, 50);
+                       OnFwd(OUT_B, -50);
+                }
+                if(dir - 5 > 0) {
+                       OnFwd(OUT_C, -50);
+                       OnFwd(OUT_B, 50);
+                }
+                if(dir - 5 == 0) {
+                       OnFwd(OUT_C, 0);
+                       OnFwd(OUT_B, 0);
+                }
+                //TextNumOut(0, LCD_LINE3, "rast:    ",4,rast);
+    // }
+}
+
+void kalibrovka() {
+     while(ButtonPressed(BTNCENTER, false) == 0) {
+     azimut = SensorHTCompass(IN_3);
+     }
+      PlayTone(1780, 500);
+      while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+
+          while(ButtonPressed(BTNCENTER, false) == 0) {
+     azimutRight = SensorHTCompass(IN_3);
+     }
+            PlayTone(1780, 500);
+      while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+          while(ButtonPressed(BTNCENTER, false) == 0) {
+     azimutLeft = SensorHTCompass(IN_3);
+     }
+      PlayTone(1780, 500);
+      while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+}
+
+
+void gotoball()
+{
+   SetSensorLowspeed(IRSEEKER);
+   ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+   TextNumOut(0, LCD_LINE3, "Dir:    ",4,dir);
+   TextNumOut(6, LCD_LINE4, "S1:     ",3,s1);
+   TextNumOut(6, LCD_LINE5, "S2:     ",3,s2);
+   TextNumOut(6, LCD_LINE6, "S3:     ",3,s3);
+   TextNumOut(6, LCD_LINE7, "S4:     ",3,s4);
+   TextNumOut(6, LCD_LINE8, "S5:     ",3,s5);
+
+   if(dir==5){
+   OnFwd(OUT_BC,0);
+   OnFwd(OUT_BC,-100);
+   //OnFwd(OUT_A,-100);
+   }
+   if(dir<5){
+   OnFwd(OUT_BC,0);
+   OnFwd(OUT_B,-100);
+   OnFwd(OUT_C,100);
+   }
+   if(dir>5){
+   OnFwd(OUT_BC,0);
+   OnFwd(OUT_C,-100);
+   OnFwd(OUT_B,100);
+   }
+   rast = s1 + s2 + s3 + s4 + s5;
+   if(rast>80)
+   {
+    OnFwd(OUT_A, -100);
+   }
+   else
+   {
+    OnFwd(OUT_A, 0);
+   }
+}
+
+task main()
+{
+#ifdef __ENHANCED_FIRMWARE
+SetLongAbort(true);
+#endif
+SetSensorLowspeed(IN_3);
+SetSensorUltrasonic(IN_1);
+SetSensorLowspeed(IRSEEKER);
+
+Wait(1000);
+kalibrovka();
+/*
+  1. Поворот на мяч
+  2. Если мяч близко, атаковать 4-5 секунд.
+  3. Воврат в ворота.
+*/
+s = 0;
+while(true)
+{
+ ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
+ rast = s1 + s2 + s3 + s4 + s5;
+
+  if(rast<80){
+   ScanBall();
+   }
+  else {
+    returnGoal();
+   /*while(s<5){
+    PlayTone(1780, 500);
+    gotoball();
+    s = s+1;
+    }*/
+   }
+}
+
+}
