@@ -1,10 +1,12 @@
-
 #define IRSEEKER IN_2
 #define TextNumOut(xPos,yPos,str,col,num)  TextOut(xPos,yPos,str);NumOut(xPos+6*col,yPos,num)
 int s, x;
-int dir, s1, s2, s3, s4, s5, result, rast;
+int dir, s1, s2, s3, s4, s5, result, rast, fast;
 int upLeft, upRight, upCenter;
 int azimut, azimutRight, azimutLeft;
+int ataka = 0, goal = 0;
+long time1,time2, t;
+
 int up() {
      int compass;
      compass = SensorHTCompass(IN_3);
@@ -20,41 +22,121 @@ void returnGoal() {
     OnFwd(OUT_B, 0);
     OnFwd(OUT_A, 0);
     up();
-    while(upLeft != 0) {
-                up();
+    while(abs(upLeft) >= 10) {
+    
+              
                 if(upLeft < 0) {
-                       OnFwd(OUT_C, 50);
-                       OnFwd(OUT_B, -50);
+                       OnFwd(OUT_C, -75);
+                       OnFwd(OUT_B, 75);
                 }
                 if(upLeft > 0) {
-                       OnFwd(OUT_C, -50);
-                       OnFwd(OUT_B, 50);
+                       OnFwd(OUT_C, 75);
+                       OnFwd(OUT_B, -75);
                 }
                 if(upLeft == 0) {
                        OnFwd(OUT_C, 0);
                        OnFwd(OUT_B, 0);
-                       PlayTone(1780, 500);
-                       //Wait(5000);
                 }
+                Wait(50);
+                up();
+                x = SensorUS(IN_1);
+                TextNumOut(0, LCD_LINE3, "upCenter:    ",4,upCenter);
+                TextNumOut(6, LCD_LINE4, "upLeft:     ",3,upLeft);
+                TextNumOut(6, LCD_LINE5, "upRight:     ",3,upRight);
+                TextNumOut(6, LCD_LINE6, "Rast:     ",3,x);
     }
-    
+                       OnFwd(OUT_C, 0);
+                       OnFwd(OUT_B, 0);
+                       //PlayTone(1780, 500);
+                       Wait(50); 
+                       //поворот налево завершен
     
     //ехать к центру до 93 сантиметров
     x = SensorUS(IN_1);
-    while(x != 93) {
+    while(abs(x - 93) > 5) {
+         up();
          x = SensorUS(IN_1);
-         if(x - 93 > 0) {
-              OnFwd(OUT_BC, 50);
-              
-         }    else {
-             OnFwd(OUT_BC, -50);
-         }
-    }
-    
-    
-    // Повернуться на ворота
-    // Двиггаться к воротам
+                TextNumOut(0, LCD_LINE3, "upCenter:    ",4,upCenter);
+                TextNumOut(6, LCD_LINE4, "upLeft:     ",3,upLeft);
+                TextNumOut(6, LCD_LINE5, "upRight:     ",3,upRight);
+                TextNumOut(6, LCD_LINE6, "Rast:     ",4,x);
+         if(x > 93) {
+              OnFwd(OUT_C, 90 + upLeft/2);
+              OnFwd(OUT_B, 90 - upLeft/2);
 
+         }
+         else {
+              OnFwd(OUT_C, -90 + upLeft/2);
+              OnFwd(OUT_B, -90 - upLeft/2);
+         }
+         Wait(50);
+    }
+                       OnFwd(OUT_C, 0);
+                       OnFwd(OUT_B, 0);
+                       PlayTone(1780, 500);
+                       Wait(50);
+                       //Wait(5000); //doit
+
+    // Повернуться на ворота
+    OnFwd(OUT_C, 0);
+    OnFwd(OUT_B, 0);
+    OnFwd(OUT_A, 0);
+    up();
+    
+    while(abs(upCenter) >= 10) {
+
+
+                if(upCenter < 0) {
+                       OnFwd(OUT_C, -75);
+                       OnFwd(OUT_B, 75);
+                }
+                if(upCenter > 0) {
+                       OnFwd(OUT_C, 75);
+                       OnFwd(OUT_B, -75);
+                }
+                if(upCenter == 0) {
+                       OnFwd(OUT_C, 0);
+                       OnFwd(OUT_B, 0);
+                }
+                Wait(50);
+                up();
+                x = SensorUS(IN_1);
+                TextNumOut(0, LCD_LINE3, "upCenter:    ",4,upCenter);
+                TextNumOut(6, LCD_LINE4, "upLeft:     ",3,upLeft);
+                TextNumOut(6, LCD_LINE5, "upRight:     ",3,upRight);
+                TextNumOut(6, LCD_LINE6, "Rast:     ",3,x);
+    }
+         OnFwd(OUT_C, 0);
+         OnFwd(OUT_B, 0);
+         Wait(50);
+         //PlayTone(1780, 500);
+         //Wait(5000);
+
+    // Двиггаться к воротам
+    x = SensorUS(IN_1);
+     while(abs(x - 35) > 5) {
+         up();
+         x = SensorUS(IN_1);
+                TextNumOut(0, LCD_LINE3, "upCenter:    ",4,upCenter);
+                TextNumOut(6, LCD_LINE4, "upLeft:     ",3,upLeft);
+                TextNumOut(6, LCD_LINE5, "upRight:     ",3,upRight);
+                TextNumOut(6, LCD_LINE6, "Rast:     ",4,x);
+         if(x > 35) {
+              OnFwd(OUT_C, 75 + upCenter/2);
+              OnFwd(OUT_B, 75 - upCenter/2);
+
+         }
+         else {
+              OnFwd(OUT_C, -75 + upCenter/2);
+              OnFwd(OUT_B, -75 - upCenter/2);
+         }
+         Wait(50);
+    }
+         OnFwd(OUT_C, 0);
+         OnFwd(OUT_B, 0);
+         Wait(50);
+         //PlayTone(1780, 500);
+         //Wait(5000);
 
 }
 void ScanBall() {
@@ -62,15 +144,15 @@ void ScanBall() {
      int rast = s1 + s2 + s3 + s4 + s5;
      //while(rast < 100) {
 
-                if(dir - 5 < 0) {
+                if(dir - 4 < 0) {
                        OnFwd(OUT_C, 50);
                        OnFwd(OUT_B, -50);
                 }
-                if(dir - 5 > 0) {
+                if(dir - 4 > 0) {
                        OnFwd(OUT_C, -50);
                        OnFwd(OUT_B, 50);
                 }
-                if(dir - 5 == 0) {
+                if(dir - 4 == 0) {
                        OnFwd(OUT_C, 0);
                        OnFwd(OUT_B, 0);
                 }
@@ -95,11 +177,13 @@ void kalibrovka() {
      }
       PlayTone(1780, 500);
       while(ButtonPressed(BTNCENTER, false) == 1) { Wait(50); }
+ 
 }
 
 
 void gotoball()
 {
+
    SetSensorLowspeed(IRSEEKER);
    ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
    TextNumOut(0, LCD_LINE3, "Dir:    ",4,dir);
@@ -108,22 +192,23 @@ void gotoball()
    TextNumOut(6, LCD_LINE6, "S3:     ",3,s3);
    TextNumOut(6, LCD_LINE7, "S4:     ",3,s4);
    TextNumOut(6, LCD_LINE8, "S5:     ",3,s5);
-
-   if(dir==5){
-   OnFwd(OUT_BC,0);
+   int speed = abs(4 - dir) * 10 + 0;
+   if(dir==4){
+   //OnFwd(OUT_BC,0);
    OnFwd(OUT_BC,-100);
-   //OnFwd(OUT_A,-100);
+   //OnFwd(OUT_A,-75);
    }
-   if(dir<5){
-   OnFwd(OUT_BC,0);
-   OnFwd(OUT_B,-100);
-   OnFwd(OUT_C,100);
+   if(dir<4){
+   //OnFwd(OUT_BC,0);
+   OnFwd(OUT_B,-100 - speed);
+   OnFwd(OUT_C,-100 + speed);
    }
-   if(dir>5){
-   OnFwd(OUT_BC,0);
-   OnFwd(OUT_C,-100);
-   OnFwd(OUT_B,100);
+   if(dir>4){
+   //OnFwd(OUT_BC,0);
+   OnFwd(OUT_C,-100 - speed);
+   OnFwd(OUT_B,-100 + speed);
    }
+   Wait(50);
    rast = s1 + s2 + s3 + s4 + s5;
    if(rast>80)
    {
@@ -133,7 +218,9 @@ void gotoball()
    {
     OnFwd(OUT_A, 0);
    }
+    Wait(50);
 }
+
 
 task main()
 {
@@ -146,6 +233,8 @@ SetSensorLowspeed(IRSEEKER);
 
 Wait(1000);
 kalibrovka();
+goal = 1;
+Wait(50);
 /*
   1. Поворот на мяч
   2. Если мяч близко, атаковать 4-5 секунд.
@@ -156,18 +245,41 @@ while(true)
 {
  ReadSensorHTIRSeeker2AC(IRSEEKER, dir, s1, s2, s3, s4, s5);
  rast = s1 + s2 + s3 + s4 + s5;
+ 
+ //Режим стоять в воротах
+  if(rast<80 && goal == 1){
+    ScanBall();
+  }
+  
+  //переключить режим в атаку
+  if (rast>=80 && goal == 1) {
+     ataka = 1;
+     time1 = CurrentTick();
+     goal = 0;
+     PlayTone(1780, 500);
+     }
 
-  if(rast<80){
-   ScanBall();
-   }
-  else {
-    returnGoal();
-   /*while(s<5){
-    PlayTone(1780, 500);
+  //переключить режим НЕ атака
+  time2 = CurrentTick();
+  t = time2-time1;
+  if(t > 4000  && rast<80 && ataka == 1) {
+             ataka = 0;
+             PlayTone(1580, 500);
+  }
+  
+  //ЗВЕРШИТЬ АТАКУ ПО ВРЕМЕНИ ЧЕРЕЗ 4 СЕК
+
+  if(ataka == 1) {
+    //PlayTone(1780, 500);
     gotoball();
-    s = s+1;
-    }*/
+  }
+    
+  if (ataka == 0 && goal == 0)
+   {
+    returnGoal();
+    goal = 1;
    }
 }
 
 }
+
