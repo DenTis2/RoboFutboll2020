@@ -24,7 +24,7 @@ int main() {
     int hMax = 92;
 
     int sMin = 110;
-    int sMax = 255;
+    int sMax = 255; 
 
     int vMin = 48;
     int vMax = 255;
@@ -55,6 +55,10 @@ int main() {
     while (true) {
         cap >> image;
         cv::imshow("Image", image);
+
+        // cv::Mat result(cv::Mat::zeros(image.size(), CV_8UC3));
+        auto result = image.clone();
+
         cv::cvtColor(image, image, cv::COLOR_BGR2HSV);
         cv::Scalar lower(hMin, sMin, vMin);
         cv::Scalar upper(hMax, sMax, vMax);
@@ -64,28 +68,29 @@ int main() {
         cv::blur(image, detectedEdges, cv::Size(5, 5));
         cv::Canny(detectedEdges, detectedEdges, cannyThreshold, cannyThreshold * 3.0);
 
-        cv::Mat result(cv::Mat::zeros(image.size(), CV_8UC3));
-
         std::vector<std::vector<cv::Point> > contours;
         cv::findContours(detectedEdges, contours, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE);
 
-        auto areaThresholdInterpolated = (int)((double)areaThreshold / 100.0) * image.total();
+        auto areaThresholdInterpolated = (double)areaThreshold;
 
         for (auto contour : contours) {
             if (contour.size() < 6) continue;
 
-            cv::Scalar color = cv::Scalar(rng.uniform(0, 256), rng.uniform(0, 256), rng.uniform(0, 256));
+            // cv::Scalar color = cv::Scalar(rng.uniform(0, 256), rng.uniform(0, 256), rng.uniform(0, 256));
+            cv::Scalar color = cv::Scalar(0, 0, 255);
 
             auto ellipse = cv::fitEllipse(contour);
-            auto width = ellipse.boundingRect().width;
-            auto height = ellipse.boundingRect().height;
+            auto width = ellipse.size.width;
+            auto height = ellipse.size.height;
 
             auto majorAxisLength = std::max(width, height);
             auto minorAxisLength = std::min(width, height);
 
-            auto eccentricity = std::sqrt(1 - std::pow(minorAxisLength / majorAxisLength, 2));
+            auto eccentricity = std::sqrt(1.0 - std::pow(minorAxisLength / majorAxisLength, 2));
             if (eccentricity > (double)eccentricityThreshold / 100.0) continue;
-            if (cv::contourArea(contour) < areaThresholdInterpolated) continue;
+            
+            auto area = cv::contourArea(contour);
+            if (area < areaThresholdInterpolated) continue;
 
             cv::ellipse(result, ellipse, color, 2);
         }
@@ -98,23 +103,5 @@ int main() {
         }
     }
 
-    /*
-        edges = cv2.Canny(img, lower, upper)
-        cv2.imshow('Edges', edges)
-        _, contours, _ = cv2.findContours(edged, cv2.RETR_TREE, 1)
-        rep = cv2.drawContours(img1, contours, -1, (0, 255, 0), 3)
-        cv2.imshow(Contours',rep)
-
-    //for (auto countour : cnt)
-    cnt = contours
-    for i in range(0, len(cnt)):
-        ellipse = cv2.fitEllipse(cnt[i])
-        (center,axes,orientation) =ellipse
-        majoraxis_length = max(axes)
-        minoraxis_length = min(axes)
-        eccentricity=(np.sqrt(1-(minoraxis_length/majoraxis_length)**2))
-        cv2.ellipse(img2,ellipse,(0,0,255),2)
-
-        */
     cv::destroyAllWindows();
 }
