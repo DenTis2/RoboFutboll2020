@@ -13,13 +13,13 @@ int B = 10;
 int D = 5;
 int datchik_protechki = A0;
 int laser = 12;
-int manipulator = 80;
+int manipulator = 85;
 void setup() {
   // initialize serial:
   pinMode(laser,OUTPUT);
   Serial.begin(9600);
-  // reserve 200 bytes for the inputString:
-  inputString.reserve(200);
+  // reserve 400 bytes for the inputString:
+  inputString.reserve(400);
   servoA.attach(A);
   servoB.attach(B);
   servoC.attach(C);
@@ -45,15 +45,14 @@ void loop() {
    if (s > 500){
     digitalWrite(laser,1);
     delay(1000);
-    digitalWrite(laser,0);
    }
    if (stringComplete) {
     char string = inputString.charAt(0);
-    Serial.println(string);
+    //Serial.println(string);
     inputString.setCharAt(0,'0');
-    Serial.println(inputString);
+    //Serial.println(inputString);
     int speed = inputString.toInt();
-    Serial.println(speed);
+    //Serial.println(speed);
     if(string == 'A'){
      servoA.writeMicroseconds(speed);
     }
@@ -71,29 +70,31 @@ void loop() {
      if(speed == manipulator){
      digitalWrite(7, HIGH);
      digitalWrite(8, LOW);
-     digitalWrite(6, manipulator);
+     analogWrite(6, manipulator);
      delay(200);
      digitalWrite(7, LOW);
      digitalWrite(8, LOW);
      }
      else{
-     digitalWrite(7, LOW);
+     digitalWrite(7, LOW); 
      digitalWrite(8, HIGH);
-     digitalWrite(6, manipulator);
+     analogWrite(6, manipulator);
      delay(200);
      digitalWrite(7, LOW);
      digitalWrite(8, LOW);
      }
     }
-    speed = inputString.toInt();
+    //speed = inputString.toInt();
     //Serial.println(inputString);
     // clear the string:
     inputString = "";
     stringComplete = false;
     digitalWrite(13, 1);
-    delay(100);
+    delay(30);
     digitalWrite(13, 0);     
   }
+  if(millis() / 100 % 50 == 0) digitalWrite(13, 0);
+  if(millis() / 100 % 100 == 0) digitalWrite(13, 1);
 }
   
 void serialEvent() {
