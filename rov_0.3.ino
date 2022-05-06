@@ -71,7 +71,7 @@ void loop() {
      digitalWrite(7, HIGH);
      digitalWrite(8, LOW);
      analogWrite(6, manipulator);
-     delay(200);
+     delay(2000);
      digitalWrite(7, LOW);
      digitalWrite(8, LOW);
      }
@@ -79,7 +79,7 @@ void loop() {
      digitalWrite(7, LOW); 
      digitalWrite(8, HIGH);
      analogWrite(6, manipulator);
-     delay(200);
+     delay(2000);
      digitalWrite(7, LOW);
      digitalWrite(8, LOW);
      }
