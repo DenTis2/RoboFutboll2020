@@ -33,11 +33,11 @@ double last;
 double last_top_l;
 double last_left_l;
 double last_right_l;
-int count = 0;
+int counter = 0;
 int leftrotate = 0;
 int rightrotate = 0;
-int toprotate = 0;
-long tpause = 2000;
+int backrotate = 0;
+long tpause = 1024;
 using namespace webots;
 using namespace std; 
 using namespace cv;
@@ -176,24 +176,61 @@ int main(int argc, char **argv) {
      //rightEncoder->getValue(); 
      // leftEncoder->getValue();
     //double ps = wb_distance_sensor_get_value(ps[1]);
-     //cout << rightEncoder->getValue() << " " << leftEncoder->getValue() <<" ";
+     //cout << rightEncoder->getValue() << " " << leftEncoder->getValue() <<" ";//
      //cout << left_l_val << " " << top_l_val << " " <<right_l_val << " " <<endl;
-     
-
-     if(top_l_val > 0.07 && down_val < 0.13){
-       left_speed = MAX_SPEED + right_l_val * 5;
-       right_speed = MAX_SPEED - right_l_val * 5;
+     //cout << down_val << " "<< top_l_val<< endl;
+     if(backrotate == 1){
+      if(-leftEncoder->getValue() + last < 0.5){
+       left_speed = -MAX_SPEED * 2;
+       right_speed = -MAX_SPEED * 2;
+       leftEncoder->getValue();      
+      }
+      else{
+       backrotate = 0;
+       left_motor->setVelocity(0.0);
+       right_motor->setVelocity(0.0);
+       leftEncoder->getValue(); 
+      }       
+     }
+     else if (leftrotate == 1){
+      if(leftEncoder->getValue() - last > -3.075){
+       left_speed = -MAX_SPEED * 2;
+       right_speed = MAX_SPEED * 2;
+       leftEncoder->getValue();      
+      }
+      else{
+       leftrotate = 0;
+       //toprotate = 1;
+       last = leftEncoder->getValue();
+       left_motor->setVelocity(0.0);
+       right_motor->setVelocity(0.0);
+      }    
+     }
+     else{
+      if(top_l_val > 0.057 && down_val < 0.2){
+       int sp1 = MAX_SPEED + right_l_val * 5;
+       int sp2 = MAX_SPEED - right_l_val * 5;
+       if(sp1 > 6.28){
+        sp1 = 6.28;
+       }
+       if(sp2 < -6.28){
+        sp2 = -6.28;
+       }
+       left_speed = sp1;
+       right_speed = sp2;
        
-       if (right_l_val < 0.07)  left_speed =  left_speed * 0.7;
-       if (left_l_val < 0.07)  right_speed =  right_speed * 0.7;
+       if (right_l_val < 0.07)  left_speed =  left_speed * 0.6;
+       if (left_l_val < 0.07)  right_speed =  right_speed * 0.6;
+      }
+      else {
+       last = leftEncoder->getValue();
+       leftrotate = 1;
+       backrotate = 1;
+       //left_speed = -MAX_SPEED * 2;
+       //right_speed = MAX_SPEED * 2;
+      }
      }
-     else {
-     
-       left_speed = -MAX_SPEED;
-       right_speed = MAX_SPEED;
-     
-     }
-
+//
       /*while(leftEncoder->getValue() - last < 35.0){
        left_motor->setVelocity(-left_speed);
        right_motor->setVelocity(right_speed);
@@ -215,17 +252,20 @@ int main(int argc, char **argv) {
      char message[9]; // Here we use a 9 byte array, since sizeof(int + int + char) = 9
   
      const double* position = gps->getValues(); // Get the current gps position of the robot
-     int x = (int) position[0] * 100; // Get the xy coordinates, multiplying by 100 to convert from meters to cm 
-     int y = (int) position[2] * 100; // We will use these coordinates as an estimate for the victim's position
- 
+     int x = (int) (position[0] * 100.); // Get the xy coordinates, multiplying by 100 to convert from meters to cm 
+     int y = (int) (position[2] * 100.); // We will use these coordinates as an estimate for the victim's position
+     //x = (int) (gps->getValues()[0] * 100.);
+     //y = (int) (gps->getValues()[2] * 100.);
      int victim_pos[2] = {x, y};
  
      memcpy(message, victim_pos, sizeof(victim_pos)); // Copy the victim position into the message array
-     message[8] = 'F'; // The victim type is harmed
- 
+     message[8] = 'F'; // The victim type
+     
      emitter->send(message, sizeof(message)); 
      
-     cout << "X: " << gps->getValues()[0] << "Y: " << gps->getValues()[2] << endl;
+     cout << "X: " << (int )(gps->getValues()[0] * 100.) << "Y: " << gps->getValues()[2] << endl;
+     cout << "X: " << victim_pos[0] << "Y: " << (int) position[2] * 100 << endl;
+     cout << message[8]  << " " << sizeof(message) << endl;
      number = -988;
      }
     }           
@@ -234,21 +274,23 @@ int main(int argc, char **argv) {
     //right_motor->setVelocity(0.0);
     left_motor->setVelocity(left_speed);
     right_motor->setVelocity(right_speed);
-   /* if((last_left_l == left_l_val) && (last_right_l = right_l_val) && (last_top_l == top_l_val)){
-     count = count + 1;  
+    cout << counter  << "  " << top_l_val << " " << right_l_val << " " << left_l_val << endl;
+    if((abs(left_l_val - last_left_l) < 0.00001) && (abs(last_right_l - right_l_val) < 0.0001 ) && (abs(last_top_l- top_l_val) < 0.00001)){
+     counter = counter + 1;  
     }
-    else if(count > 0){
-     count = 0;
+    else if(counter > 0){
+     counter = 0;
     }
-    if(count > 100){
-     left_motor->setVelocity(-2 * MAX_SPEED);
-     right_motor->setVelocity(-2 * MAX_SPEED);
-     cout << "1";    
+    if(counter > 100){
+     backrotate = 1;
+     leftEncoder->getValue(); 
+     cout << "1";
+     counter = 0;    
     }
     last_left_l = left_l_val;
     last_right_l = right_l_val;
     last_top_l = top_l_val;
-    */
+    
     waitKey(1);
   }
 
