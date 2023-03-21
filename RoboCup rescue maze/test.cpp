@@ -29,6 +29,8 @@
 //6.28
 // All the webots classes are defined in the "webots" namespace
 int number = 0;
+int red = 0;
+int yeallow = 0;
 double last;
 double last_top_l;
 double last_left_l;
@@ -37,16 +39,18 @@ int counter = 0;
 int leftrotate = 0;
 int rightrotate = 0;
 int backrotate = 0;
-long tpause = 1024;
+int tur;
+int dich = 0;
+long tpause = 2048;
 using namespace webots;
 using namespace std; 
 using namespace cv;
 vector<vector<int>> myColors{{61,83,209,255,137,198}, //Green
                              {110,178,149,254,124,200},   //Red
-                             {16,41,134,200,190,241}, //Yealow
+                             {20,30,100,255,100,255}, //Yealow
                              {11,110,0,160,0,67},   //Black
+                             {0,172,0,111,168,255},//white
 };
-
 vector<Scalar>myColorValues{ {0,255,0},
                              {255,0,0},
                              {255,255,0},
@@ -65,33 +69,112 @@ void getConturs(Mat imgDil){
  vector<Vec4i> hierarchy;
  findContours(imgDil,contours,hierarchy,RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
 
- for(int i = 0; i < contours.size(); i++){
+ for(int i = 0; i <contours.size(); i++){
   int area = contourArea(contours[i]);
   vector<vector<Point>>conPoly(contours.size());
   vector<Rect>boundRect(contours.size());
   string objectType;
+   //tur = area;
    //cout << "! " << area << endl;
+   /*if(tur >= 1){
+    dich = 1;
+   } */
    if(area > 5){
-    number = number + 1;
-      
+    number = 1;
     float peri = arcLength(contours[i],true);
     approxPolyDP(contours[i],conPoly[i],0.02 * peri,true);
     boundRect[i] = boundingRect(conPoly[i]);
 
-    drawContours(imgDil, conPoly,i,Scalar(0,255,0),2);
+    //drawContours(frame, conPoly,i,Scalar(0,255,0),2);
   }
  }
 }
 
+/*void Bukva(Mat imgB){
+ 
+ vector<vector<Point>> contours;
+ vector<Vec4i> Hierarchy;
+ findContours(imgB, contours, Hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+
+ for(int o = 0; o < contours.size(); o++){
+  int place = contourArea(contours[o]);
+  vector<vector<Point>>conPoly(contours.size());
+  vector<Rect>boundRect(contours.size());
+  cout << place << endl;
+  if(place > 2000){
+   float peri = arcLength(contours[o],true);
+   approxPolyDP(contours[o], conPoly[o],0.02 * peri, true);
+
+   boundRect[o] =  boundingRect(conPoly[o]);
+   int up = 0;
+   int down = 0;
+   cout << " Yo " << endl;
+   cout << boundRect[o].tl().x << " " <<  boundRect[o].tl().y << " " <<  boundRect[o].br().x << " " <<  boundRect[o].br().y << endl;
+   cout << floor(boundRect[o].tl().x + 0.4 * (boundRect[o].br().x - boundRect[o].tl().x )) << " " <<  boundRect[o].tl().y << " " << floor(boundRect[o].tl().x + 0.6 * (boundRect[o].br().x - boundRect[o].tl().x)) << " " << floor(boundRect[o].tl().y + 0.1 * (boundRect[o].br().y - boundRect[o].tl().y)) << endl;
+   Rect roi(floor(boundRect[o].tl().x + 0.45 * (boundRect[o].br().x - boundRect[o].tl().x )) , floor(boundRect[o].br().y - 0.1 * (boundRect[o].br().y - boundRect[o].tl().y)), floor(0.1 * (boundRect[o].br().x - boundRect[o].tl().x )),floor(0.05 * (boundRect[o].br().y - boundRect[o].tl().y)));
+   Mat crop = imgB(roi);
+   getConturs(crop);
+   //cout << "! " << tur << endl;
+   //imshow("down",crop);
+   if(dich == 1){
+    cout << "black_down" << endl;
+    dich = 0;
+    down = 1;
+   }
+   else { 
+    down = 0;
+    cout << "white_down" << endl;
+   }
+   Rect roi1(floor(boundRect[o].tl().x + 0.45 * (boundRect[o].br().x - boundRect[o].tl().x )) , floor(boundRect[o].tl().y + 0.05 * (boundRect[o].br().y - boundRect[o].tl().y)), floor(0.1 * (boundRect[o].br().x - boundRect[o].tl().x )),floor(0.05 * (boundRect[o].br().y - boundRect[o].tl().y)));
+   Mat crop1 = imgB(roi1);
+   getConturs(crop1);
+   //cout << "! " << tur << endl;
+   // imshow("up",crop1);
+   if(dich == 1){
+    cout << "black_up" << endl;
+    dich = 0;
+    up = 1;
+   }
+   else {
+    up = 0;
+    cout << "white_up" << endl;
+   }
+   if(up == 1 && down == 1){
+    cout << "S" << endl;
+   }
+   else if(up == 0 && down == 1){
+    cout << "U" << endl;
+   }
+   else {
+    cout << "H" << endl;
+   }
+  }
+ }
+}*/
 void pressFColor(Mat img){
  Mat imgHSV;
  cvtColor(img, imgHSV,COLOR_BGR2HSV);
-  Scalar lower(myColors[1][0],myColors[1][2],myColors[1][4]);
-  Scalar upper(myColors[1][1],myColors[1][3],myColors[1][5]);
+ for(int u=2; u > 0; u--){
+  Scalar lower(myColors[u][0],myColors[u][2],myColors[u][4]);
+  Scalar upper(myColors[u][1],myColors[u][3],myColors[u][5]);
   Mat mask;
   inRange(imgHSV,lower,upper,mask);
-  imshow("chebureck",mask);
+  //imshow(to_string(u),mask);
+  imshow("frame1", mask);
   getConturs(mask);
+  if (number == 1){
+   number = 0;
+   if( u == 2){
+    yeallow = yeallow + 1;
+    cout << "yeallow" << endl;
+    red = 0;
+   }
+   else if( u == 1){
+    cout << "red" << endl;
+    red = red + 1;
+   }
+  }
+ }
 }
 int main(int argc, char **argv) {
   // create the Robot instance.
@@ -117,6 +200,7 @@ int main(int argc, char **argv) {
   Receiver* receiver = robot->getReceiver("receiver");
   GPS* gps = robot->getGPS("gps"); 
   Camera *cam2 = robot->getCamera("camera2");
+  Camera *cam1 = robot->getCamera("camera1");
   DistanceSensor *top_l = robot->getDistanceSensor("distance sensor3");
   DistanceSensor *left_l = robot->getDistanceSensor("distance sensor1");
   DistanceSensor *right_l = robot->getDistanceSensor("distance sensor2");
@@ -136,6 +220,7 @@ int main(int argc, char **argv) {
   rightEncoder->enable(timeStep);
   colorSensor->enable(timeStep);
   cam2->enable(timeStep);
+  cam1->enable(timeStep);
   receiver->enable(timeStep);
   gps->enable(timeStep); 
   // You should insert a getDevice-like function in order to get the
@@ -239,41 +324,79 @@ int main(int argc, char **argv) {
       //left_motor->setVelocity(left_speed);
       //right_motor->setVelocity(right_speed); 
    
-    Mat frame(cam2->getHeight(), cam2->getWidth(), CV_8UC4, (void*)cam2->getImage());
-    
-    imshow("frame", frame);
-    pressFColor(frame);
-    if (number > 0){
+    Mat frame2(cam2->getHeight(), cam2->getWidth(), CV_8UC4, (void*)cam2->getImage());
+    imshow("frame2", frame2);
+    pressFColor(frame2);
+    Mat frame1(cam1->getHeight(), cam1->getWidth(), CV_8UC4, (void*)cam1->getImage());
+    imshow("frame11", frame1);
+    pressFColor(frame1);    
+    if(yeallow > 0){
+     //cout << "YES!!!" << endl;
+     red = 0;
      left_speed = 0;
      right_speed = 0;
      tpause -= timeStep;
      if (tpause < 0){
      //sleep(1);
-     char message[9]; // Here we use a 9 byte array, since sizeof(int + int + char) = 9
+     char message1[9]; // Here we use a 9 byte array, since sizeof(int + int + char) = 9
   
-     const double* position = gps->getValues(); // Get the current gps position of the robot
-     int x = (int) (position[0] * 100.); // Get the xy coordinates, multiplying by 100 to convert from meters to cm 
-     int y = (int) (position[2] * 100.); // We will use these coordinates as an estimate for the victim's position
+     const double* position1 = gps->getValues(); // Get the current gps position of the robot
+     int x = (int) (position1[0] * 100.); // Get the xy coordinates, multiplying by 100 to convert from meters to cm 
+     int y = (int) (position1[2] * 100.); // We will use these coordinates as an estimate for the victim's position
      //x = (int) (gps->getValues()[0] * 100.);
      //y = (int) (gps->getValues()[2] * 100.);
-     int victim_pos[2] = {x, y};
+     int victim_pos1[2] = {x, y};
  
-     memcpy(message, victim_pos, sizeof(victim_pos)); // Copy the victim position into the message array
-     message[8] = 'F'; // The victim type
+     memcpy(message1, victim_pos1, sizeof(victim_pos1)); // Copy the victim position into the message array
+     message1[8] = 'O'; // The victim type
      
-     emitter->send(message, sizeof(message)); 
+     emitter->send(message1, sizeof(message1)); 
      
      cout << "X: " << (int )(gps->getValues()[0] * 100.) << "Y: " << gps->getValues()[2] << endl;
-     cout << "X: " << victim_pos[0] << "Y: " << (int) position[2] * 100 << endl;
-     cout << message[8]  << " " << sizeof(message) << endl;
-     number = -988;
+     cout << "X: " << victim_pos1[0] << "Y: " << (int) position1[2] * 100 << endl;
+     cout << message1[8]  << " " << sizeof(message1) << endl;
+     yeallow = -988;
+     }
+    }
+    else if (red > 0){
+     Mat frame2(cam2->getHeight(), cam2->getWidth(), CV_8UC4, (void*)cam2->getImage());
+     imshow("frame2", frame2);
+     pressFColor(frame2);
+     Mat frame1(cam1->getHeight(), cam1->getWidth(), CV_8UC4, (void*)cam1->getImage());
+     imshow("frame11", frame1);
+     pressFColor(frame1);      
+     if(yeallow <= 0){
+      left_speed = 0;
+      right_speed = 0;
+      tpause -= timeStep;
+      if (tpause < 0){
+     //sleep(1);
+       char message[9]; // Here we use a 9 byte array, since sizeof(int + int + char) = 9
+  
+       const double* position = gps->getValues(); // Get the current gps position of the robot
+       int x = (int) (position[0] * 100.); // Get the xy coordinates, multiplying by 100 to convert from meters to cm 
+       int y = (int) (position[2] * 100.); // We will use these coordinates as an estimate for the victim's position
+     //x = (int) (gps->getValues()[0] * 100.);
+     //y = (int) (gps->getValues()[2] * 100.);
+       int victim_pos[2] = {x, y};
+ 
+       memcpy(message, victim_pos, sizeof(victim_pos)); // Copy the victim position into the message array
+       message[8] = 'F'; // The victim type
+     
+       emitter->send(message, sizeof(message)); 
+     
+       cout << "X: " << (int )(gps->getValues()[0] * 100.) << "Y: " << gps->getValues()[2] << endl;
+       cout << "X: " << victim_pos[0] << "Y: " << (int) position[2] * 100 << endl;
+       cout << message[8]  << " " << sizeof(message) << endl;
+       red = -988;
+      }
      }
     }           
    
     //left_motor->setVelocity(0.0);
     //right_motor->setVelocity(0.0);
     left_motor->setVelocity(left_speed);
-    right_motor->setVelocity(right_speed);
+    right_motor->setVelocity(right_speed);   
     cout << counter  << "  " << top_l_val << " " << right_l_val << " " << left_l_val << endl;
     if((abs(left_l_val - last_left_l) < 0.00001) && (abs(last_right_l - right_l_val) < 0.0001 ) && (abs(last_top_l- top_l_val) < 0.00001)){
      counter = counter + 1;  
