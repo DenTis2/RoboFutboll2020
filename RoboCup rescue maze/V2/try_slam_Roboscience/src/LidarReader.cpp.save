@@ -1,0 +1,238 @@
+#include "LidarReader.hpp"
+#include <cstring>
+#include <cmath>
+#include <iostream>
+//gov
+LidarReader::LidarReader(SerialBus& bus_) : bus(bus_) {buffer.reserve(BUF_SIZE);readerThread = std::thread(&LidarReader::readerThreadFunc, this);}
+
+
+LidarReader::~LidarReader() {
+    stopThread = true;
+    if(readerThread.joinable()) readerThread.join();
+}
+
+
+void LidarReader::readerThreadFunc() {
+    uint8_t temp[1024];
+
+    while(!stopThread) {
+        size_t n = bus.readSome(temp, sizeof(temp));
+        if(n == 0) {
+            std::this_thread::sleep_for(std::chrono::milliseconds(1));
+            continue;
+        }
+
+        std::lock_guard<std::mutex> lock(bufferMutex);
+        if(buffer.size() + n > BUF_SIZE) {
+            size_t overflow = buffer.size() + n - BUF_SIZE;
+            buffer.erase(buffer.begin(), buffer.begin() + overflow);
+        }
+        buffer.insert(buffer.end(), temp, temp + n);
+        dataReady.notify_one();
+    }
+}
+
+bool LidarReader::readScan(std::vector<LidarPoint>& scan) {
+    scan.clear();
+
+    std::unique_lock<std::mutex> lock(bufferMutex);
+
+    // Ждем хотя бы несколько байт
+    dataReady.wait_for(lock, std::chrono::milliseconds(5), [this]{ return !buffer.empty(); });
+
+    size_t start = 0;
+    constexpr size_t PACKET_SIZE = 1 + 4 + 2;
+
+    while(start + PACKET_SIZE <= buffer.size() && scan.size() < 415) {
+        if(buffer[start] != 0xAA) { ++start; continue; }
+
+        float angle_deg = *reinterpret_cast<float*>(&buffer[start + 1]);
+        short dist_mm   = *reinterpret_cast<short*>(&buffer[start + 5]);
+
+        if(dist_mm > 0) {
+            LidarPoint p;
+            p.angle    = static_cast<double>(angle_deg) * M_PI / 180.0;
+            p.distance = static_cast<double>(dist_mm) / 1000.0;
+            scan.push_back(p);
+        }
+
+        start += PACKET_SIZE;
+    }
+
+    if(start > 0) {
+        if(start < buffer.size()) {
+            std::memmove(buffer.data(), buffer.data() + start, buffer.size() - start);
+            buffer.resize(buffer.size() - start);
+        } else {
+            buffer.clear();
+        }
+    }
+
+    return !scan.empty();
+}
+
+/*
+bool LidarReader::readScan(std::vector<LidarPoint>& scan) {
+    scan.clear();
+    const size_t PACKET_SIZE = 1 + 4 + 2; // 0xAA + float angle + short dist
+
+    // читаем все доступные байты и добавляем в буфер
+    uint8_t temp[1024];
+    size_t n = bus.readSome(temp, sizeof(temp));
+    if(n > 0) buffer.insert(buffer.end(), temp, temp + n);
+//    std::cout << "readSome returned " << n << " bytes" << std::endl;
+    size_t i = 0;
+    while(i + PACKET_SIZE <= buffer.size()) {
+        // ищем заголовок
+        if(buffer[i] != 0xAA) {
+            ++i;
+            continue;
+        }
+
+        // проверка на полный пакет
+        if(i + PACKET_SIZE > buffer.size()) break;
+
+        float angle_deg;
+        short dist_mm;
+        std::memcpy(&angle_deg, &buffer[i+1], sizeof(float));
+        std::memcpy(&dist_mm, &buffer[i+5], sizeof(short));
+
+        if(dist_mm > 0 && std::isfinite(angle_deg)) {
+            LidarPoint p;
+            p.angle = static_cast<double>(angle_deg) * M_PI / 180.0; // градусы → радианы
+            p.distance = static_cast<double>(dist_mm) / 1000.0;       // мм → м
+            scan.push_back(p);
+        }
+
+        i += PACKET_SIZE;
+    }
+
+    // удаляем обработанные байты
+    if(i > 0) buffer.erase(buffer.begin(), buffer.begin() + i);
+
+    return !scan.empty();
+}
+
+/*bool LidarReader::readScan(std::vector<LidarPoint>& scan) {
+    scan.clear();
+
+    // читаем все доступные байты за один раз
+    uint8_t temp[1024];
+    size_t n = bus.readSome(temp, sizeof(temp)); // см. реализацию ниже
+    if(n == 0) return false;
+
+    buffer.insert(buffer.end(), temp, temp + n);
+
+    processBuffer(scan);
+
+    return !scan.empty();
+}
+*/
+void LidarReader::processBuffer(std::vector<LidarPoint>& scan) {
+    size_t i = 0;
+
+    while(i + 7 <= buffer.size()) { // пакет 1 + 4 + 2 = 7 байт
+        if(buffer[i] != 0xAA) {
+            ++i;
+            continue;
+        }
+
+        float angle_deg;
+        short dist_mm;
+
+        std::memcpy(&angle_deg, &buffer[i+1], 4);
+        std::memcpy(&dist_mm, &buffer[i+5], 2);
+
+        if(dist_mm > 0) { // фильтр нулевых точек
+            LidarPoint p;
+            p.angle = static_cast<double>(angle_deg) * M_PI / 180.0; // перевод в радианы
+            p.distance = static_cast<double>(dist_mm) / 1000.0;       // мм → м
+            scan.push_back(p);
+        }
+
+        i += 7;
+    }
+
+    // удаляем обработанные байты
+    if(i > 0) {
+        buffer.erase(buffer.begin(), buffer.begin() + i);
+    }
+}
+
+
+/*bool LidarReader::readScan(std::vector<LidarPoint>& scan) {
+    scan.clear();
+    buffer.reserve(1024); // кольцевой буфер
+
+    const size_t POINT_SIZE = 1 + 4 + 2; // 0xAA + float angle + short dist
+    size_t pointsRead = 0;
+
+    while(pointsRead < 415) { // читаем 415 точек
+        uint8_t b;
+        if(!bus.readByte(b)) return false;
+        buffer.push_back(b);
+
+        // ищем заголовок
+        if(buffer.size() < POINT_SIZE) continue;
+        if(buffer[0] != 0xAA) {
+            buffer.erase(buffer.begin()); // сдвигаем, пока не найдём 0xAA
+            continue;
+        }
+
+        // полный пакет есть
+        float angle;
+        short dist;
+        std::memcpy(&angle, &buffer[1], sizeof(float));
+        std::memcpy(&dist, &buffer[5], sizeof(short));
+
+        // конвертация
+        scan.push_back({angle, (double)dist / 1000.0});
+        pointsRead++;
+
+        // удаляем пакет из буфера
+        buffer.erase(buffer.begin(), buffer.begin() + POINT_SIZE);
+    }
+
+    return true;
+}
+*/
+/*bool LidarReader::readScan(std::vector<LidarPoint>& scan) {
+    scan.clear();
+    uint8_t b;
+    while(scan.size() < 415) {
+        if(!bus.readByte(b)) return false;      // читаем один байт
+        if(b != 0xAA) continue;                 // ищем заголовок
+
+        float angle;
+        short distance_mm;
+
+        if(!bus.readBytes((uint8_t*)&angle, sizeof(angle))) return false;
+        if(!bus.readBytes((uint8_t*)&distance_mm, sizeof(distance_mm))) return false;
+
+        double distance = (double)distance_mm / 1000.0;
+        scan.push_back({angle, distance});
+    }
+    return true;
+}
+*/
+/*
+bool LidarReader::readScan(std::vector<LidarPoint>& scan) {
+    scan.clear();
+    std::string line;
+    double last_angle = -1;
+
+    for (;;) {
+        if (!bus.readLine(line)) return false;
+        std::stringstream ss(line);
+        double angle;
+	short distance_mm;
+        char sep;
+        if (!(ss >> angle >> sep >> distance_mm)) continue;
+	double distance = (double)distance_mm/1000.0;
+        scan.push_back({angle, distance});
+        if (angle < last_angle) break;
+        last_angle = angle;
+        if (scan.size() > 4000) break;
+    }
+    return true;
+}*/

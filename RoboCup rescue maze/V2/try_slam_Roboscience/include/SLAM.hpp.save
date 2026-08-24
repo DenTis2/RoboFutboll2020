@@ -1,0 +1,25 @@
+#pragma once
+#include "LidarReader.hpp"
+#include "Map.hpp"
+#include "MotorController.hpp"
+#include "RobotConfig.hpp"
+#include <Eigen/Dense>
+//
+class SLAM {
+public:
+    SLAM(LidarReader& lidar, Map& map, MotorController& motor, const RobotConfig& cfg);
+    void step();
+    Eigen::Vector3d getPose() const;
+
+private:
+    LidarReader& lidar;
+    Map& map;
+    MotorController& motor;
+    const RobotConfig& config;
+
+    Eigen::Vector3d pose;
+    std::vector<LidarPoint> lastScan;
+
+    void scanMatch(const std::vector<LidarPoint>& newScan);
+    Eigen::Vector2d polarToCartesian(double angle, double distance);
+};

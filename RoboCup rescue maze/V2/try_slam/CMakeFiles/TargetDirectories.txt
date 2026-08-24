@@ -1,0 +1,3 @@
+/home/grin/try_slam/CMakeFiles/rpi_slam.dir
+/home/grin/try_slam/CMakeFiles/edit_cache.dir
+/home/grin/try_slam/CMakeFiles/rebuild_cache.dir

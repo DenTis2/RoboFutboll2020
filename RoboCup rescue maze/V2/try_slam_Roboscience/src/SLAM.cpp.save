@@ -1,0 +1,196 @@
+#include "SLAM.hpp"
+#include <cmath>
+#include <iostream>
+
+SLAM::SLAM(LidarReader& lidar_, Map& map_, MotorController& motor_, const RobotConfig& cfg)
+: lidar(lidar_), map(map_), motor(motor_), config(cfg), pose(0,0,0) {}
+
+Eigen::Vector2d SLAM::polarToCartesian(double angle, double distance) {
+    double rad = angle;//\*M_PI/180.0;
+    return Eigen::Vector2d(distance*cos(rad), distance*sin(rad));
+}
+
+
+/*void SLAM::step() {
+    std::vector<LidarPoint> scan;
+    if(!lidar.readScan(scan)) return;
+
+    if(scan.empty()) return; 
+    
+    // debug: вывод первых 5 точек и их данных
+//    for(size_t i=0; i<std::min(scan.size(), size_t(5)); ++i)
+ //     std::cout << "LidarPoint: angle=" << scan[i].angle << " dist=" << scan[i].distance << std::endl;
+   std::cout<<std::min(scan.size(),size_t(5))<<std::endl;
+    // блокируем всё остальное до нормальной проверки
+}
+
+*/
+
+void SLAM::step() {
+    // Чтение скана
+    std::vector<LidarPoint> scan;
+    if(!lidar.readScan(scan) || scan.empty()) return;
+
+    // Обновляем локальную позицию через scan matching
+    scanMatch(scan);
+
+    // Получаем текущую позицию и проверяем на NaN / бесконечности
+    Eigen::Vector3d currentPose = getPose();
+    if(!std::isfinite(currentPose(0)) || 
+       !std::isfinite(currentPose(1)) || 
+       !std::isfinite(currentPose(2))) {
+        return;
+    }
+
+    // Конвертируем точки скана из полярных координат в декартовы
+    std::vector<Eigen::Vector2d> points;
+    for(auto& p : scan) {
+        if(p.distance <= 0.01 || p.distance > 15.0) continue; // фильтр мусора
+        points.push_back(polarToCartesian(p.angle, p.distance));
+    }
+
+    // Обновляем карту
+    map.update(points, currentPose);
+
+    // Временно двигаем с минимальной скоростью, чтобы SLAM не падал
+    motor.setSpeed(config.maxSpeed / 4, config.maxSpeed / 4);
+}
+
+// scanMatch безопасно обновляет pose
+void SLAM::scanMatch(const std::vector<LidarPoint>& newScan) {
+    if(newScan.empty()) return; // защита от пустого скана
+
+    if(lastScan.empty()){ 
+        lastScan = newScan; 
+        return; 
+    }
+
+    std::vector<Eigen::Vector2d> prevPts, newPts;
+
+    // предыдущие точки
+    for(auto& p : lastScan) prevPts.push_back(polarToCartesian(p.angle, p.distance));
+
+    // новые точки после фильтра
+    for(auto& p : newScan) {
+        if(p.distance <= 0.01 || p.distance > 15.0) continue;
+        newPts.push_back(polarToCartesian(p.angle, p.distance));
+    }
+
+    if(newPts.empty()) return; // защита от пустых после фильтрации
+
+    Eigen::Vector2d delta(0,0);
+    int n = std::min(prevPts.size(), newPts.size());
+    if(n == 0) return;
+
+    for(int i = 0; i < n; ++i) delta += (prevPts[i] - newPts[i]);
+    delta /= n;
+
+    // Защита от NaN
+    if(!std::isfinite(delta(0))) delta(0) = 0.0;
+    if(!std::isfinite(delta(1))) delta(1) = 0.0;
+
+    pose(0) += delta(0);
+    pose(1) += delta(1);
+
+    lastScan = newScan;
+}
+
+
+/*void SLAM::scanMatch(const std::vector<LidarPoint>& newScan) {
+    if(newScan.empty()) return; // защита от пустого скана
+
+    if(lastScan.empty()){ 
+        lastScan = newScan; 
+        return; 
+    }
+
+    std::vector<Eigen::Vector2d> prevPts, newPts;
+
+    for(auto& p:lastScan) prevPts.push_back(polarToCartesian(p.angle,p.distance));
+
+    for(auto& p:newScan) {
+        if(p.distance <= 0.01 || p.distance > 15.0) continue; // фильтр мусора
+        newPts.push_back(polarToCartesian(p.angle,p.distance));
+    }
+    if(prevPts.empty() || newPts.empty()) return;
+//    if(newPts.empty()) return; // защита от пустых после фильтрации
+
+    Eigen::Vector2d delta(0,0);
+    int n = std::min(prevPts.size(), newPts.size());
+    if(n == 0) return;
+    for(int i=0;i<n;++i) delta += (prevPts[i]-newPts[i]);
+    delta /= n;
+
+    // Защита от NaN
+    if(!std::isfinite(delta(0))) delta(0) = 0.0;
+    if(!std::isfinite(delta(1))) delta(1) = 0.0;
+
+    pose(0) += delta(0);
+    pose(1) += delta(1);
+
+    lastScan = newScan;
+}
+
+void SLAM::step() {
+    std::vector<LidarPoint> scan;
+    if(!lidar.readScan(scan) || scan.empty()) {
+        // debug
+        return;
+    }
+
+    scanMatch(scan);
+
+    Eigen::Vector3d currentPose = getPose();
+    if(!std::isfinite(currentPose(0)) || !std::isfinite(currentPose(1)) || !std::isfinite(currentPose(2))) {
+        // debug
+        return;
+    }
+
+    std::vector<Eigen::Vector2d> points;
+    for(auto& p:scan) {
+        if(p.distance <= 0.01 || p.distance > 15.0) continue;
+        points.push_back(polarToCartesian(p.angle,p.distance));
+    }
+
+    map.update(points, currentPose);
+
+    // временно двигаем с минимальной скоростью, чтобы SLAM не падал
+    motor.setSpeed(config.maxSpeed/4, config.maxSpeed/4);
+}*/
+Eigen::Vector3d SLAM::getPose() const { return pose; }
+/*void SLAM::scanMatch(const std::vector<LidarPoint>& newScan) {
+    if(lastScan.empty()){ lastScan = newScan; return; }
+
+    std::vector<Eigen::Vector2d> prevPts,newPts;
+    for(auto& p:lastScan) prevPts.push_back(polarToCartesian(p.angle,p.distance));
+    for(auto& p:newScan){
+	if(p.distance <= 0.01 || p.distance > 15.0) continue;
+	newPts.push_back(polarToCartesian(p.angle,p.distance));
+    }
+    Eigen::Vector2d delta(0,0);
+    int n = std::min(prevPts.size(),newPts.size());
+    for(int i=0;i<n;++i) delta += (prevPts[i]-newPts[i]);
+    if(n==0) return;
+    delta/=n;
+
+    pose(0)+=delta(0);
+    pose(1)+=delta(1);
+
+    lastScan = newScan;
+}
+
+Eigen::Vector3d SLAM::getPose() const { return pose; }
+
+void SLAM::step() {
+    std::vector<LidarPoint> scan;
+    if(!lidar.readScan(scan)) return;
+
+    scanMatch(scan);
+
+    std::vector<Eigen::Vector2d> points;
+    for(auto& p:scan) points.push_back(polarToCartesian(p.angle,p.distance));
+    map.update(points, pose);
+
+    motor.setSpeed(config.maxSpeed/2, config.maxSpeed/2);
+}
+*/

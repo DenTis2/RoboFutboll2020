@@ -1,0 +1,139 @@
+#include "Map.hpp"
+#include <algorithm>
+#include <cmath>
+#include <iostream>
+
+using namespace std;
+Map::Map(int w, int h, double res) : width(w), height(h), resolution(res) {
+    grid.resize(width, std::vector<int>(height, 0));
+}
+
+/*void Map::update(const std::vector<Eigen::Vector2d>& points, const Eigen::Vector3d& robotPose) {
+    for (auto& pt : points) {
+        double x_world = robotPose(0) + pt(0)*cos(robotPose(2)) - pt(1)*sin(robotPose(2));
+        double y_world = robotPose(1) + pt(0)*sin(robotPose(2)) + pt(1)*cos(robotPose(2));
+        int xi = std::clamp(int(x_world / resolution), 0, width-1);
+        int yi = std::clamp(int(y_world / resolution), 0, height-1);
+        grid[xi][yi] = 1;
+    }
+}*/
+
+void Map::debugPrintMap() {
+    std::cout << "Map visualization:\n";
+
+    for (int y = height - 1; y >= 0; --y) {
+        for (int x = 0; x < width; ++x) {
+            if (grid[x][y] == 1) std::cout << "#";   // занятая
+            else if (grid[x][y] == 0) std::cout << "."; // свободная
+            else std::cout << " "; // неизвестная
+        }
+        std::cout << "\n";
+    }
+
+    std::cout << "Map size: width=" << width << ", height=" << height 
+              << ", resolution=" << resolution << "\n";
+}
+
+/*
+void Map::update(const std::vector<Eigen::Vector2d>& points, const Eigen::Vector3d& robotPose) {
+    int updatedPoints = 0;
+    for (auto& pt : points) {
+        // Преобразуем из координат лидара в мировые
+        double x_world = robotPose(0) + pt(0) * cos(robotPose(2)) - pt(1) * sin(robotPose(2));
+        double y_world = robotPose(1) + pt(0) * sin(robotPose(2)) + pt(1) * cos(robotPose(2));
+
+        // --- фильтруем шум ---
+        if (std::isnan(x_world) || std::isnan(y_world)) continue;
+        if (fabs(x_world) > width * resolution || fabs(y_world) > height * resolution) continue;
+
+        // Проверяем границы карты
+        int xi = int((x_world + width * resolution / 2) / resolution);
+        int yi = int((y_world + height * resolution / 2) / resolution);
+
+        if (xi < 0 || yi < 0 || xi >= width || yi >= height)
+            continue;
+
+        grid[xi][yi] = 1; // занятая ячейка
+        updatedPoints++;
+    }
+
+    std::cout << "[DEBUG] Updated points in map: " << updatedPoints << std::endl;
+}*/
+void Map::update(const vector<Eigen::Vector2d>& pts, const Eigen::Vector3d& pose)
+{
+    for (auto& p : pts) {
+        double wx = pose(0) + p(0)*cos(pose(2)) - p(1)*sin(pose(2));
+        double wy = pose(1) + p(0)*sin(pose(2)) + p(1)*cos(pose(2));
+
+        int gx1, gy1; // robot position in grid
+        tie(gx1, gy1) = worldToGrid(pose(0), pose(1));
+
+        int gx2, gy2; // hit cell
+        tie(gx2, gy2) = worldToGrid(wx, wy);
+
+        // Bresenham: free cells along ray
+        int dx = abs(gx2 - gx1);
+        int dy = abs(gy2 - gy1);
+        int sx = gx1 < gx2 ? 1 : -1;
+        int sy = gy1 < gy2 ? 1 : -1;
+
+        int err = dx - dy;
+        int x = gx1, y = gy1;
+
+        while (!(x == gx2 && y == gy2)) {
+            grid[x][y] = 0; // FREE
+
+            int e2 = 2 * err;
+            if (e2 > -dy) { err -= dy; x += sx; }
+            if (e2 <  dx) { err += dx; y += sy; }
+        }
+
+        grid[gx2][gy2] = 1; // OCCUPIED
+    }
+}
+
+
+void Map::inflateObstacles(double robotWidth, double robotLength) {
+    int rx = int(robotWidth / resolution);
+    int ry = int(robotLength / resolution);
+
+    std::vector<std::vector<int>> newGrid = grid;
+    for (int x = 0; x < width; ++x)
+        for (int y = 0; y < height; ++y)
+            if (grid[x][y] == 1)
+                for (int dx=-rx; dx<=rx; ++dx)
+                    for (int dy=-ry; dy<=ry; ++dy){
+                        int nx = x+dx, ny=y+dy;
+                        if(nx>=0 && nx<width && ny>=0 && ny<height)
+                            newGrid[nx][ny] = 1;
+                    }
+    grid = newGrid;
+}
+
+bool Map::isFree(int x, int y) const {
+    if(x<0 || x>=width || y<0 || y>=height) return false;
+    return grid[x][y]==0;
+}
+/*
+Eigen::Vector2d Map::gridToWorld(int gx, int gy) const {
+    return Eigen::Vector2d((gx+0.5)*resolution, (gy+0.5)*resolution);
+}
+
+/*std::pair<int,int> Map::worldToGrid(double x, double y) const {
+    return {int(x/resolution), int(y/resolution)};
+}
+std::pair<int,int> Map::worldToGrid(double x, double y) const {
+    return {int((x + width*resolution/2)/resolution), int((y + height*resolution/2)/resolution)};
+}
+*/
+pair<int,int> Map::worldToGrid(double x, double y) const {
+    int gx = int(x/resolution + width/2);
+    int gy = int(y/resolution + height/2);
+    return {gx, gy};
+}
+
+Eigen::Vector2d Map::gridToWorld(int gx, int gy) const {
+    double x = (gx - width/2 + 0.5) * resolution;
+    double y = (gy - height/2 + 0.5) * resolution;
+    return {x, y};
+}
